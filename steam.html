@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    
+<!-- Mirrored from melvins-world.neocities.org/steam by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:04:15 GMT -->
+<head><title>Man, I hate steam.... pipes</title>
+        <link  rel="stylesheet" href="style.css">
+        <link  rel="stylesheet" href="SteamAssets/steamStyle.css">
+      </head>
+  
+      <body class="Steam"> 
+       <div id="steamTop">
+        <a href="memories.html"> <img src="cloud1.gif"> </a>
+<br>
+<img src="SteamAssets/Steam.gif">
+
+<br>
+<img src="B%26B/UCBanner.gif" width="300px">
+<h2 style="color:white;">Not finished yet. Just wanted to make sure everything I have so far is displayed as it is on my offline build</h2>
+<br>
+
+
+
+
+       </div>
+
+
+
+<br>
+
+<div id="steamContainer">
+
+<div id="steamCHead">
+<div id="sHeadUser"><p>Webmaster_Gina's Account</p></div>
+<div id="sHeadT1"><div><p>Steam</p><p>Veiw</p><p>Friends</p><p>Games</p><p>Help</p></div></div>
+<div id="sHeadT2"><div><h1>&lt;~~</h1> <h1>~~&gt;</h1><h1>STORE</h1><h1>LIBRARY</h1><h1>NEWS</h1><h1>COMMUNITY</h1></div></div>
+<div id="sHeadT3"><div><h3>GAMES</h3><h3>MEDIA</h3><h3>TOOLS</h3><h3>DOWNLOADS</h3></div></div>
+
+</div>
+
+<div id="steamCViewScreen">
+<div id="steamCViewScreenContent">
+
+ 
+
+      <div class="steamLibraryList1">
+            <p id="intro"  onclick="selectIntro()">Intro</p>
+            <p id="gmod" onclick="selectGmod()">Garry's Mod</p>
+            <p id="tf2" onclick="selectTf2()">Team Fortress 2</p>
+            <p id="borderlands" onclick="selectBorderlands()">Borderlands</p>
+            <p id="hitman" onclick="selectHitman()">Hitman: Blood Money</p>
+            <p id="kf" onclick="selectKf()">Killing Floor</p>
+            <p id="terraria" onclick="selectTerraria()">Terraria</p>
+            <p id="mount" onclick="selectMount()">Mount & Blade: With Fire & Sword</p>
+            <p id="serious" onclick="selectSerious()">Serious Sam: Both Encounters</p>
+            <p id="messiah" onclick="selectMessiah()">Dark Messiah of Might and Magic</p>
+            <p id="fallout2" onclick="selectFallout2()">Fallout 2</p>
+            <p id="magicka" onclick="selectMagicka()">Magicka</p>
+
+       
+    </div>
+
+<script>
+
+
+
+
+    function resetListBG() {
+        document.getElementById("intro").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("gmod").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("tf2").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("borderlands").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("hitman").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("kf").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("terraria").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("mount").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("serious").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("messiah").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("fallout2").style.backgroundColor = "rgba(56, 70, 96, .0)";
+        document.getElementById("magicka").style.backgroundColor = "rgba(56, 70, 96, .0)";
+    }
+
+function selectIntro() {
+    resetListBG();
+    
+    document.getElementById("intro").style.backgroundColor = "rgba(56, 70, 96, .80)";
+
+}
+
+function selectGmod() {
+    resetListBG();
+    document.getElementById("gmod").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/gmodtest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Garry's Mod</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectTf2() {
+    resetListBG();
+    document.getElementById("tf2").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/tf2test.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Team Fortress 2</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectBorderlands() {
+    resetListBG();
+    document.getElementById("borderlands").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/borderlandstest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Borderlands</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectHitman() {
+    resetListBG();
+    document.getElementById("hitman").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/hitmantest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Hitman: Blood Money</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectKf() {
+    resetListBG();
+    document.getElementById("kf").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/killingfloortest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Killing Floor</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectTerraria() {
+    resetListBG();
+    document.getElementById("terraria").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/terrariatest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Terraria</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectMount() {
+    resetListBG();
+    document.getElementById("mount").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/mountbladetest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Mount & Blade: With Fire & Sword</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectSerious() {
+    resetListBG();
+    document.getElementById("serious").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/serioustest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Serious Sam HD: The First and Second Encounter</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectMessiah() {
+    resetListBG();
+    document.getElementById("messiah").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/messiahtest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Dark Messiah of Might & Magic</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectFallout2() {
+    resetListBG();
+    document.getElementById("fallout2").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/fallout2test.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Fallout 2</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+function selectMagicka() {
+    resetListBG();
+    document.getElementById("magicka").style.backgroundColor = "rgba(56, 70, 96, .80)";
+    document.getElementById("steamCViewScreenContent").style.backgroundImage = "url(SteamAssets/magickatest.png)";
+    document.getElementById("LibrarySelectionTitle").innerHTML = "<p>Magicka</p>";
+    document.getElementById("LibrarySelectionSubtitle").innerHTML = "";
+}
+
+
+</script>
+
+    <div id="LibrarySelection"> 
+        
+        <div id="LibrarySelectionTitle"><p>Intro test </p></div>
+        <div id="LibrarySelectionSubtitle"><p>Purchased In: N/A </p></div>
+        <br>
+        <br>
+        <div id="LibrarySelectionTextbox">
+            <h2>Intro</h2>
+            <iframe width="200" height="200" src="https://www.youtube-nocookie.com/embed/SBp4UUcEPCk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <p>While not the first service to digitally distrbute video games, Steam was and has been the most popular. Steam was originally released in 2004 as a means for Valve to digitally distribute thier own games (Half-Life, Counter Strike, etc), they later went on to distrubite games from other developers around 2005.
+            </p>
+
+            <p>This page will document my experiences with Steam. The games listed on the left are sorted (mostly) chronologically of when I first bought them</p>
+            <img src="SteamAssets/mw2test.png" height="200px">
+           
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+<div id="steamCStatusImage">   <img src="SteamAssets/Sniperava.jpg" width="50px"> </div>
+<div id="steamCStatusText"><h4> VIEW FRIENDS</h4><p>0 Online</p></div>
+</div>
+
+   
+            </body>
+            
+            
+<!-- Mirrored from melvins-world.neocities.org/steam by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:04:16 GMT -->
+</html>

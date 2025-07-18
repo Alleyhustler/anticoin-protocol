@@ -1,0 +1,1485 @@
+    .base {
+   
+    margin: 0;
+    padding: 0;
+      font-family: "Jockey One", sans-serif;
+
+    text-align: center;
+    background-color: black;
+    background-image: url("Tiles/BrickS.png");
+    color:#ee442b;
+
+  }
+  
+  
+  .pageError {
+     margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url("Tiles/brickmissing.png");
+    color:rgb(219, 163, 89);
+
+  }
+  
+
+
+
+
+ 
+
+
+  body.list {
+    margin: 0;
+      font-family: "Jockey One", sans-serif;
+
+    padding: 0;
+    background-color: black;
+    background-image: url("Tiles/BrickS.png");
+    color:rgb(219, 163, 89);
+
+  }
+
+  body.list .textcontainer{
+   text-align: center;
+      padding:0px;
+      margin-left:20%;
+      Margin-right:20%;
+     /* border: double thick rgb(131, 34, 55); */
+     border: 10px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+      background-color: rgba(36, 28, 28, 0.5); 
+      
+      
+      display:block;
+
+
+  }
+
+  body.memory{
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    text-align: center;
+    background-color: black;
+    background-image: url("bliss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color:rgb(255, 255, 255);
+  }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  .trashden {
+  text-align: center;
+  margin: 0;
+    padding: 0;
+  }
+
+a {
+ color: rgb(233, 121, 57);
+text-decoration: underline;
+  font-family: "Jockey One", sans-serif;
+
+}
+
+.buttonbreak{
+  text-align: center;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+ width: 800px;
+  border-width: 1px;
+  border:inset rgb(223, 120, 52);
+}
+
+
+.navbar {
+  position: absolute;
+  height: auto;
+
+border: 5px ridge rgb(223, 120, 52);
+  background-color: rgba(17, 4, 4, 0.6) ; 
+  margin-left: 8.8%;
+  margin-top: 4.3%;
+    }
+
+   
+
+    .navbar3 {
+      position: absolute;
+      height: auto;
+    
+   border: 5px ridge rgb(223, 120, 52);
+      background-color: rgba(17, 4, 4, 0.6) ; 
+      margin-left: 83%;
+      margin-top: 4.3%;
+        } 
+    
+
+    .marquee {
+    
+      width: 60%
+    }
+  
+
+.navbar1 {
+  text-align: center;
+  font-size: larger;
+  margin: 0 auto;
+  width: 800px;
+    font-family: "Jockey One", sans-serif;
+
+}
+  
+ .navbar1 ul {
+   text-align: center;
+  /* border: solid rgb(131, 34, 55); */
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+    .navbar1 p {
+    text-align: center;
+  
+     
+ 
+   }
+
+  ul {
+    list-style-type: none;
+  }
+
+  /* has to do with the spacing between list items */
+ .navbar1 li {
+    display: inline;
+ 
+   
+    padding-right: 10px;
+  }
+
+  /* handles entire div, think of it like the box you see */
+  .textcontainer{
+    padding:0px;
+    margin-left:20%;
+      font-family: "Jockey One", sans-serif;
+
+    Margin-right:20%;
+  border: 5px ridge rgb(223, 120, 52);
+    background-color: rgba(36, 28, 28, 0.5); 
+    display:block;
+  }
+  
+   #boneborder {
+    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+    
+    
+  }
+  
+  #cloudborder {
+    border: 20px solid transparent ;
+    border-image: url(cloudborder.png) 33% round;
+    
+    
+  }
+    
+     #petalBorder {
+    border: 20px solid transparent ;
+    border-image: url(petalborder3.png) 33% round;
+    
+    
+  }
+  
+    #fableBorder {
+    border: 20px solid transparent ;
+    border-image: url(fableborder.png) 33% ;
+    
+    
+  }
+  
+  #flameBorder {
+    border: 20px solid transparent ;
+    border-image: url(flameborder.html) 33% ;
+    
+    
+  }
+  
+
+  .textcontainer p {
+    
+    font-size: 20;
+    text-align: left;
+
+  }
+
+  .textcontainerabout{
+    padding:0px;
+    margin-left:20%;
+    Margin-right:20%;
+   /* border: double thick rgb(131, 34, 55); */
+    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+    background-color: rgba(36, 28, 28, 0.8); 
+    display:block;
+  }
+
+  .textcontainerabout p {
+    
+    font-size: 20;
+    text-align: left;
+
+  }
+
+
+
+
+  .textcontainerW{
+
+    border: double thick rgb(55, 169, 214);
+    background-color: rgba(36, 28, 28, 0.9); 
+    display:block;
+  }
+  .textcontainerW h1 {
+    border: double thick rgb(55, 169, 214);
+  }
+
+  .textcontainerW p {
+text-align: left;
+  }
+
+
+  
+
+
+ 
+
+      .scrollbox {
+ margin-left:12%;
+        Margin-right:12%;
+        height: 600px;
+        text-align:left;
+          /* border: double thick rgb(131, 34, 55); */
+        border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+        background-color: rgba(36, 28, 28, 0.9); 
+
+        overflow:auto;
+        overflow-x: auto; 
+
+      }
+
+    
+
+        .scrollbox h1 {
+text-align: center;
+
+        }
+
+        .scrollbox h3 {
+          text-align: center;
+          
+                  }
+       
+
+
+        .scrollbox td{
+                   border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+        
+        }
+
+        .scrollbox td h1{
+
+        width:800px;
+        
+        }
+
+        .scrollbox2 {
+          margin-left:3%;
+          Margin-right:3%;
+          height: 600px;
+          
+        /*  border: double thick rgb(131, 34, 55); */
+          
+                    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+          background-color: rgba(36, 28, 28, 0.5); 
+  
+          overflow:auto;
+          overflow-x: hidden; 
+  
+  
+        }
+
+     
+
+        .scrollbox2 p {
+          text-align:left;
+          margin:10px
+        }
+
+        .scrollbox2 h1 {
+          text-align:left;
+          margin:10px
+        }
+
+        .scrollbox2 h2 {
+          text-align:left;
+          margin:10px
+        }
+
+        .scrollbox2 h3 {
+          text-align:left;
+          margin:10px
+        }
+        
+         .scrollbox2 h4 {
+          text-align:left;
+          margin:10px
+        }
+
+
+   
+
+        .scrollbox2 td {
+        
+         /* border: double thick rgb(131, 34, 55); */
+                    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+          background-color: rgba(36, 28, 28, 0.8); 
+  
+  
+        }
+
+
+        .scrollbox3 {
+          margin-left:5%;
+          Margin-right:5%;
+          height: 600px;
+          text-align:left;
+        /*  border: double thick rgb(131, 34, 55); */
+                    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+          background-color: rgba(36, 28, 28, 0.5); 
+  
+          overflow:auto;
+          overflow-x: hidden; 
+  
+  
+        }
+
+      
+
+        .scrollbox3 td {
+        
+        /*  border: double thick rgb(131, 34, 55); */
+          
+                    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+          background-color: rgba(36, 28, 28, 0.8); 
+  
+  
+        }
+        
+        
+             .scrollbox4 {
+               
+        margin-left:15%;
+        Margin-right:15%;
+        height: 200px;
+        text-align:left;
+      /*  border: double thick rgb(131, 34, 55); */
+        
+                  border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+        background-color: rgba(36, 28, 28, 0.5); 
+
+        overflow:auto;
+        overflow-x: hidden; 
+
+
+      }
+
+    
+
+        .scrollbox4 h1 {
+text-align: center;
+
+        }
+
+          .scrollbox4 p {
+text-align: center;
+
+        }
+       
+
+
+        .scrollbox4 td{
+        /*  border: double thick rgb(131, 34, 55); */
+          
+                    border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+
+        
+        }
+
+        .scrollbox4 td h1{
+
+        width:800px;
+        
+        }
+
+ 
+
+
+        
+        
+
+
+
+   
+
+     
+
+
+        .portrait{
+          padding:0;
+          width: 20%;
+          width:270px;
+  
+          margin:10px 30px 0px 40px;
+          height:216px;
+         
+          float:left;
+          
+      border: double thick rgb(131, 34, 55);
+      background-color: rgba(36, 28, 28, 0.5)   ; 
+    
+        }
+  
+        .portraitP{
+          border: double thick rgb(131, 34, 55);
+          background-color: rgba(36, 28, 28, 0.5)   ; 
+        }
+      
+        .portraittext{
+          font-size: 20;
+          padding:10px;
+          
+          width: 50%;
+          float:left;
+        margin:60px 10px 100px 20px;
+          border: double thick rgb(131, 34, 55);
+          background-color: rgba(36, 28, 28, 0.5)    ; 
+        }
+
+       
+        .picturecontainer {
+          border: double thick rgb(55, 169, 214);
+          background-color: rgba(36, 28, 28, 0.5); 
+ 
+          white-space: nowrap;
+
+          overflow-x: auto;
+          
+        
+        }
+
+   
+        .picturecontainer li {
+          display: inline;
+          width: 150px;
+          height: 150px;
+        }
+
+
+        .textimagebeside {
+          display: inline-block;
+
+        }
+
+
+        .linkcontainer{
+          float:center;
+          font-size: 20;
+          
+          width: 50%;
+          margin-left:25%;
+         
+         /* border: double thick rgb(131, 34, 55); */
+                          border: 20px solid transparent ;
+    border-image: url(boneborderfinal.png) 33% round;
+          background-color: rgba(36, 28, 28, 0.5); 
+  
+        }
+
+      
+       
+        .textcontainerint{
+          padding:0px;
+          margin-left:15%;
+          Margin-right:15%;
+          border: double thick rgb(131, 34, 55);
+          background-color: rgba(36, 28, 28, 0.8); 
+          display:block;
+          float:center;
+        }
+      
+        .textcontainerint p {
+          
+          font-size: 20;
+          text-align: left;
+      
+        }
+        
+         body.oddities{
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          background-color: black;
+          background-image: url("Tiles/starry.png");
+        
+
+        
+          color:rgb(206, 84, 243);
+        }
+body.oddities .textcontainerint{
+        padding:0px;
+        margin-left:15%;
+        Margin-right:15%;
+        border: double thick rgb(182, 90, 190);
+        border-width: 10px 15px 10px;
+        background-color: rgba(36, 28, 28, 0.8); 
+        display:block;
+        float:center;
+}
+
+body.oddities .textcontainerint img{
+
+
+        border: inset rgb(129, 65, 121);
+        border-width: 6px 8px 6px;
+border-radius: 5%;
+}
+       
+
+        body.oddities ol{
+          
+          text-align: left;
+          
+        }
+        
+          body.dictionary {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          background-color: black;
+          background-image: url("Tiles/BrickS.png");
+          color:rgb(194, 194, 194);
+      
+        }
+
+        .textcontainerD{
+          padding:0px;
+          margin-left:7%;
+          Margin-right:7%;
+          border: double thick rgb(85, 66, 24);
+          background-color: rgba(11, 53, 11, 0.9); 
+          display:block;
+          float:center;
+          height: 700px;
+          overflow-y: scroll;
+        }
+
+        .textcontainerD hr{
+        
+       width: 95%;
+          border: double  rgb(240, 226, 230);
+          
+        
+        }
+      
+        body.dictionary .textcontainer{
+          padding:0px;
+          margin-left:15%;
+          Margin-right:15%;
+          border: double thick rgb(85, 66, 24);
+          background-color: rgba(36, 28, 28, 0.8); 
+          display:block;
+          float:center;
+  }
+  
+   body.dictionary .navbar1 ul {
+     text-align: center;
+    border: double thick rgb(85, 66, 24);
+    background-color: rgba(11, 53, 11, 0.9); 
+    color:rgb(194, 194, 194);
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+    }
+  
+  body.dictionary .navbar1 a {
+      color:rgb(194, 194, 194);
+
+    }
+
+    body.dictionary .navbar1 li{
+      color:rgb(194, 194, 194);
+      border:none;
+
+    }
+    
+    
+    
+      body.Xbox{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: black;
+      background-image: url("Tiles/xtile.png");
+    
+
+    
+      color:rgb(206, 84, 243);
+    }
+    
+     
+     
+    
+body.Xbox .textcontainerint{
+    padding:0px;
+    margin-left:15%;
+    Margin-right:15%;
+    color:rgb(99, 228, 121);
+    border: ridge thick rgb(112, 204, 84);
+    border-radius: 100px 100px 100px 100px;
+    border-width: 5px 5px 5px;
+    background-image: url("Tiles/xtileDark.png");
+    display:block;
+    float:center;
+}
+
+
+
+body.Xbox .textcontainerintB{
+padding:0px;
+margin-left:15%;
+Margin-right:15%;
+border: solid thick rgb(101, 149, 153);
+box-shadow: 0px 0px 3px 3px rgb(221, 221, 221);
+border-radius: 100px 100px 100px 100px;
+background-color: rgba(20, 107, 138, 60%);
+background-size: stretch;
+color:rgb(221, 221, 221);
+
+display:block;
+float:center;
+}
+
+body.Xbox .textcontainerintC{
+  padding:0px;
+  margin-left:15%;
+  Margin-right:15%;
+  border: double thick rgb(255, 115, 34);
+
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(156, 107, 60, 0.6);
+  background-size: stretch;
+  color:rgb(221, 221, 221);
+  
+  display:block;
+  float:center;
+  }
+
+  body.Xbox .textcontainerintC img{
+    
+    border:  ridge rgb(255, 170, 72);
+  
+    border-radius: 10%;
+  
+    }
+    
+      body.Xbox .textcontainerintF{
+      padding:0px;
+      margin-left:15%;
+      Margin-right:15%;
+      background-color: rgba(224, 52, 0, 0.548);
+      background-size: stretch;
+      color:rgb(221, 221, 221);
+      border: 20px solid transparent ;
+      display:block;
+      float:center;
+      }
+    
+      body.Xbox .textcontainerintF img{
+        
+        border:  ridge rgb(255, 189, 113);
+      
+        border-radius: 8%;
+      
+        }
+
+
+        body.Xbox .textcontainerintS{
+          padding:0px;
+          margin-left:15%;
+          Margin-right:15%;
+          background-color: rgba(34, 59, 33, 0.562);
+          background-size: stretch;
+          color:rgb(221, 221, 221);
+          border: 15px ridge rgb(101, 151, 94);
+          display:block;
+          float:center;
+          }
+        
+          body.Xbox .textcontainerintS img{
+            
+            border:  ridge rgb(101, 151, 94);
+          
+            border-radius: 8%;
+          
+            }
+
+  body.Xbox .textcontainerintD{
+    padding:0px;
+    margin-left:15%;
+    Margin-right:15%;
+    border: ridge  thick rgb(216, 216, 216);
+    background-image: url("Tiles/doomtile.png");
+    background-size: stretch;
+    color:rgb(189, 189, 189);
+    background-color: rgba(36, 28, 28, 0.8); 
+    display:block;
+    float:center;
+  }
+
+  body.Xbox .textcontainerintD img{
+  
+    border: ridge  rgb(143, 143, 143);
+    
+  
+   
+  }
+   
+
+    body.Xbox ol{
+      
+      text-align: left;
+      
+    }
+    
+   
+          
+          
+        body.Diddly{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: black;
+      background-image: url("diddly.gif");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+      color:rgb(255, 255, 255);
+    }
+    
+      #diddlyTimer {
+     
+   font-weight: bold;
+    }
+
+    
+    
+    body.directory {
+
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: black;
+      background-position: center;
+      color:rgb(219, 163, 89);
+      background-image: url("Space.gif");
+      
+      background-repeat: no-repeat;
+    }
+    
+  
+    body.directory p {
+
+   
+      color: rgb(233, 121, 57);
+     
+    }
+    .elevatorsetL {
+      float: left;
+      border-collapse:collapse;
+      border-spacing:0px;
+      width:280px;
+      height:580px;
+      margin-left:5%;
+      Margin-right:5%;
+       border:  ridge rgb(255, 136, 0); 
+      background-image: url("Tiles/woodtile.png");
+     
+    }
+
+    .elevatorsetR {
+      float: right;
+    
+      width:280px;
+      height:580px;
+      margin-left:5%;
+      Margin-right:5%;
+      border:  ridge rgb(255, 136, 0); 
+      background-image: url("Tiles/woodtile.png");
+     
+    }
+    
+    
+     .elevatorsetH {
+      float: center;
+    
+      width:700px;
+      height: 260px;
+      margin-top: 50%;
+      margin-left:25%;
+      Margin-right:30%;
+      border:  ridge rgb(255, 136, 0); 
+      background-image: url("Tiles/woodtile.png");
+     
+    }
+
+
+                        
+  
+  
+ 
+                        
+      body.Rick{
+      
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: black;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+ color: rgb(0, 255, 221);
+    }
+    
+    body.Rick p {
+background-color: rgba(0, 0, 0, 0.514);
+
+    }
+
+
+  #ytpmvTf2 {
+  
+      height: 150px;
+
+
+      background-image: url(Tiles/tf2tile.png);
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvTf2 td {
+    
+   
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+
+
+    #ytpmvInfo {
+     
+      height: 150px;
+   
+
+
+      background-image: url(Tiles/BillyTile.png);
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvInfo td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+
+
+    #ytpmvRosen {
+     
+      height: 150px;
+   
+
+
+      background-image: url(Tiles/RosenRoom.png);
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvRosen td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+    
+        #ytpmvDonald{
+     
+      height: 150px;
+   
+
+
+      background-image: url(Tiles/McTile.png);
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvDonald td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+
+    #ytpmvXP {
+     
+      height: 150px;
+   
+
+
+      background-image: url(bliss.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvXP td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+
+
+    #ytpmvOct {
+     
+      height: 150px;
+   
+
+
+      background-image: url(Tiles/StopTile.png);
+     
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvOct td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+
+
+    #ytpmvMix {
+     
+      height: 150px;
+   
+
+
+      background-image: url(Tiles/YTPMVTile.png);
+     
+
+      overflow:auto;
+      overflow-x: hidden; 
+
+
+    }
+
+  
+
+    #ytpmvMix td {
+
+      
+
+      background-color: rgba(36, 28, 28, 0.8); 
+
+
+    }
+    
+    
+     
+     
+
+        #forceInline {
+          display:inline-flex;
+         
+        }
+
+   
+
+        #mydiv {
+          position: absolute;
+          z-index: 9;
+          
+          text-align: center;
+        }
+        
+        #mydivheader {
+          
+          cursor: move;
+          z-index: 10;
+          
+          
+        }
+     
+             #mydiv2 {
+          position: absolute;
+          z-index: 9;
+          
+          text-align: center;
+        }
+        
+        #mydivheader2 {
+          position: absolute;
+          cursor: move;
+          z-index: 10;
+          
+          
+        }
+        #musicBoxContainerCompact {
+          position:fixed;
+         bottom:10%;
+         left:-3.2%;
+         z-index: 2;
+        }
+     
+   
+                 
+                     .winampHeader {
+                        margin-left:25%;
+                        Margin-right:25%;
+                        height:35px;
+                        text-align:center;
+                    
+
+color: white;
+
+        border: ridge rgb(117, 116, 139);
+      background-color: rgb(43, 41, 66);
+
+                      }
+                                   
+                                   .winampHeader2 {
+                        margin-left:25%;
+                        Margin-right:25%;
+                        height:35px;
+                        width: 65%;
+                        text-align:center;
+                    
+
+color: white;
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92); 
+border: ridge gainsboro;
+background: url(chatbg3.png);
+
+                      }
+                      
+                      .winampcontainer {
+                        position: relative;
+                        margin-left:25%;
+                        Margin-right:25%;
+                        height: 40%;
+                        text-align:left;
+                        overflow:auto;
+
+
+color: rgb(0, 255, 51);
+
+        border: ridge rgb(117, 116, 139);
+      background-color: rgb(72, 72, 120);
+
+                      }
+                      
+                      
+          
+                      
+                             .winampcontainer2 {
+                        width:800px;
+                        position: relative;
+                        margin-left:25%;
+                        Margin-right:25%;
+                        height: 40%;
+                        text-align:left;
+                        overflow:auto;
+
+
+color: gainsboro;
+
+        border: ridge gainsboro;
+      box-shadow: 0px 0px 6px 6px rgb(92, 92, 92); 
+      background: url(chatbg3.png);
+
+                      }
+                      
+                                    .winampcontainer2  td{
+     
+
+
+color: gainsboro;
+
+        border: ridge gainsboro;
+      box-shadow: 0px 0px 4px 4px rgb(92, 92, 92); 
+  
+
+                      }
+
+                      #winampImg {
+                        width:30%;
+                        height: 94.8%;
+background-color: black;
+border: ridge rgb(117, 116, 139);
+
+                      }
+                      
+                                       #winampImg2 {
+                        width:25%;
+                        height: 94.8%;
+                        background: url(chatbg3.png);
+border: ridge gainsboro;
+
+                      }
+
+                      #winampMarquee {
+                        position: absolute;
+                        right:5%;
+                        top: 1.3%;
+                     margin-bottom: 45%;
+                        margin-bottom: 45%;
+                        width:62.5%;
+                        background-color: black;
+                        border: ridge rgb(117, 116, 139);
+                        
+                                              }
+                                              
+   #winampMarquee2 {
+   position: absolute;
+  right:5%;
+  top: 1.3%;
+    margin-bottom: 45%;
+   margin-bottom: 45%;
+   width:64%;
+   background: url(chatbg3.png);
+  border: ridge gainsboro;
+                        
+                                              }
+                                              
+ #winampPrev {
+   position: absolute;
+   text-align: center;
+   right:5%;
+   top: 15%;
+margin-bottom: 45%;
+width:62.5%;
+height: 78%;
+background-color: black;
+ border: ridge rgb(117, 116, 139);
+ overflow-y:scroll;
+}      
+
+#winampPrev p {
+  color: white;
+  font-weight:normal;
+  width:98%;
+  margin-top: 1%;
+
+  border: ridge rgb(117, 116, 139);
+background-color: rgb(43, 41, 66);
+}   
+
+#winampPrev th {
+  color: white;
+  font-weight:normal;
+  width:20%;
+  border: ridge rgb(117, 116, 139);
+background-color: rgb(43, 41, 66);
+}    
+
+
+#winampPrev2 {
+  position: absolute;
+  text-align: center;
+  right:5%;
+  top: 15%;
+margin-bottom: 45%;
+width:64%;
+height: 78%;
+background: url(chatbg3.png);
+border: ridge gainsboro;
+overflow-y:scroll;
+}      
+
+#winampPrev2 p {
+ color: white;
+ font-weight:normal;
+ width:98%;
+ margin-top: 1%;
+
+ border: ridge gainsboro;
+ background: url(chatbg3.png);
+}   
+
+#winampPrev2 th {
+ color: white;
+ font-weight:normal;
+ width:30%;
+ border: ridge gainsboro;
+ background: url(chatbg3.png);
+}    
+
+.GAMPHeader {
+  margin-left:25%;
+  Margin-right:25%;
+  height:35px;
+  width: 68%;
+  text-align:center;
+
+
+color: white;
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92); 
+border: ridge gainsboro;
+background: url(chatbg3.png);
+
+}
+
+
+       .GAMPContainer {
+  width:200px;
+  position: relative;
+  margin-left:25%;
+  margin-right:25%;
+  height: 550px;
+  text-align:left;
+  
+
+
+color: gainsboro;
+
+border: ridge  gainsboro;
+
+background: url(chatbg3.png);
+
+}
+
+              .GAMPContainer  td{
+
+
+
+color: gainsboro;
+
+border: ridge 1px gainsboro;
+
+
+
+}
+
+                 #GAMPImg {
+  
+  
+  background: url(chatbg3.png);
+border: ridge gainsboro;
+
+}
+
+
+
+
+
+    #GAMPMarquee {
+position: absolute;
+
+top: 31.5%;
+margin-bottom: 45%;
+margin-bottom: 45%;
+width:98%;
+background: url(chatbg3.png);
+border: ridge  gainsboro;
+
+}
+
+
+
+#GAMPPrev {
+  position: absolute;
+  text-align: center;
+
+  top: 37%;
+margin-bottom: 45%;
+
+height: 60%;
+background: url(chatbg3.png);
+
+overflow-y:scroll;
+}      
+
+#GAMPPrev p {
+ color: white;
+ font-weight:normal;
+ 
+ margin-top: 1%;
+
+ border: ridge 1px gainsboro;
+ background: url(chatbg3.png);
+}   
+
+#GAMPPrev th {
+ color: white;
+ font-weight:normal;
+ width:100%;
+ border: ridge 1px gainsboro;
+ background: url(chatbg3.png);
+} 
+
+
+.BlackHeart {
+  margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url("BHAssets/BHBG.html");
+    background-size: cover;
+
+    color:whitesmoke;
+
+
+
+}
+
+
+
+
+#TBHCharSelect table{
+  margin-left:10%;
+  Margin-right:10%;
+
+}
+
+#poop table{
+  margin-left:29%;
+  Margin-right:29%;
+
+}
+
+
+
+    
+      
+      
+      
+         .newsbox {
+       
+        background: black;
+        color: rgb(219, 163, 89);
+        border: 20px solid transparent ;
+        border-image: url(boneborderfinal.png) 33% round;
+        width:70%;
+        margin-left:15%;
+
+       }
+       
+       
+              .musicBoxFrame {
+height:2000px;
+width:1200px;
+border:none;
+
+
+       }
+       
+  
+  .large2 {
+    
+   font-size: 100px; 
+  }
+  
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/nicCage by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:02:09 GMT -->
+<head><title>THE CAGE PAGE</title>
+        <link  rel="stylesheet" href="style.css">
+        <link  rel="stylesheet" href="CageAssets/cageStyle.css">
+       <meta property="og:image" content="B%26B/BEES.gif">
+      <div id="vidContainer"></div>
+      </head>
+
+     
+      
+  <body class="cagePage"> 
+   
+    <div class="base"> 
+        <h1>Melvin's World!</h1>
+  
+        <br>
+
+        <div class="navbar1">
+        <ul>
+          <li><a href="home.html"> <img src="NavButtons/HomeB.png"></a></li>
+          <li><a href="about.html"> <img src="NavButtons/AboutB.png"></a></li>
+          <li><a href="news.html"> <img src="NavButtons/NewsB.png"></a></li>
+          <li><a href="directory.html"> <img src="NavButtons/DirectoryB.png"></a></li>
+          <li><a href="index.html"><img src="NavButtons/EntranceB.png"></a></li>
+        </ul>
+        <br>
+      </div>
+</div>
+
+    <div class="cageHeader">    
+   <h1><img src="CageAssets/cagehair.gif" ><img src="CageAssets/cagepage.png">  <img src="CageAssets/cagehair.gif" ></h1>  
+    </div>
+<br>
+
+<div class="cageHeader"> 
+ <h2> Some sections here are interactive! Try dragging certain elements. (videos will likely autoplay in response) </h2>
+</div>
+<br>
+<br>
+
+<div id="goneIn60" >
+  <br>
+<br>
+  </div>
+
+  <br>
+<br>
+
+
+
+
+<div id="conAirContainer" >
+
+  <div id="conAir2">
+
+<div id="conAirDrag" onmouseover="bunneh()">
+<img  id="dragBunneh" src="CageAssets/bunneh.png" > 
+  </div>
+
+  <div id="bawxBase"></div>
+  <img  id="bawxBase" src="CageAssets/bawx.png" > 
+  <img src="CageAssets/bawxcover.png" > 
+  <img src="CageAssets/putthebun.png">
+</div>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<div id="nicCageNext" >
+  
+  <div id="next2">
+ <div id="next1">
+<div id="next3"></div>
+   
+  <img src="CageAssets/next.jpg">
+
+<h2> GUEST STARRING</h2>
+  <img src="CageAssets/nextcolumbo.jpg" height="200px">
+  <br>
+  <img src="CageAssets/columbotitletest.png">
+  <br>
+<br>
+
+<button type="button" onclick="nextMain()"> Begin adventure! </button>
+
+</div>
+</div>
+
+  </div>
+
+  <br>
+<br>
+
+
+
+<div id="faceOff" >
+  <br>
+  <br>
+ 
+  <br>
+<div id="faceOffBox" ></div>
+<div id="faceOffDrag" onmouseover="takeHisFaceOff()">
+    
+
+    <img id="johnFace" src="CageAssets/faceJohn.png">
+    
+    <img id="cageFace" src="CageAssets/faceCage.png">
+
+</div>
+
+<div id="faceOffEnd">     </div>
+<div id="faceOffPrompt">
+<img src="CageAssets/faceoff.png"  height="150px">
+</div>
+</div>
+
+
+
+
+ <div id=cagePictures>
+   <br>
+  <img src="CageAssets/cageincident.png">
+
+  <div id="cageIncidentBox">
+<h1></h1>
+<br>
+    <p> Back when Chrome browser extensions were all the rage, I found this tool that changed every picture into Cage! Immediately, I started to hatch the greatest prank of all time... Cage's face would be all over my school >:3c! So, you wanna know how I pulled it off huh? Truth is, 'game was rigged from the start! Being pretty decent at troubleshooting, I was entrusted with some computer passwords and was generally our unofficial IT person. Some of my old friends still call me a "hacker" because of this XD. So, with admin access and some help from my friends, we were able to gradually install the extension onto most lab computers and some of the classroom computers. I was of course responsible for helping get rid of the "virus" afterwards, no one ever suspected a thing :3. *Lifts jacket collar, adjusts hat and disappears into a rainy alley. There's a wall at the end of the alley so I hide behind a dumpster until you leave*
+     </p>
+  </div>
+  </div>
+
+
+
+
+
+<script>
+var columboPage = 0;
+var poolCount = 0;
+
+
+
+const sixtyInterval = setInterval(sixtySeconds, 60000);
+
+function sixtySeconds() {
+
+ const element = document.getElementById('goneIn60');
+          element.remove();
+          sixtyInterval = clearInterval(sixtySeconds);
+}
+
+
+// Draggable element code found at https://www.w3schools.com/howto/howto_js_draggable.asp Still not quite sure how it works:
+function closeDragElement() {
+          // stop moving when mouse button is released:
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+
+
+function takeHisFaceOff() {
+
+      dragElement(document.getElementById("cageFace"));
+      
+      function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "")) {
+          // if present, the header is where you move the DIV from:
+          document.getElementById(elmnt.id + "").onmousedown = dragMouseDown;
+        } else {
+          // otherwise, move the DIV from anywhere inside the DIV:
+          elmnt.onmousedown = dragMouseDown;
+        }
+      
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // get the mouse cursor position at startup:
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          // call a function whenever the cursor moves:
+          document.onmousemove = elementDrag;
+        }
+      
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // calculate the new cursor position:
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          // set the element's new position:
+          elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+          elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+          if (pos3 >= 1200) {
+            
+            
+            const element = document.getElementById('cageFace');
+          element.remove();
+
+            
+            
+            document.getElementById("faceOffEnd").innerHTML = '<iframe width="150" height="150" src="https://www.youtube-nocookie.com/embed/j2d6T5G2rrY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'; 
+            document.getElementById("faceOffBox").innerHTML = '<img src="CageAssets/cfacedance.gif" height="180px"> <br> <button type="button" onclick="howdoilive3() + closeNextVid() + closeConAirVid() + nextReset()"> Reunite with your loving wife and daughter..... again  </button>'; 
+            document.getElementById('faceOffBox').style.border="none";
+            document.getElementById('faceOffPrompt').innerHTML='<img src="CageAssets/thecagefiles2.png">';
+            document.getElementById('johnFace').src="CageAssets/jfacedance.gif";
+            document.getElementById('faceOff').style.height = "400px";
+          
+          }
+        }
+      
+       closeDragElement();
+      
+       
+       
+    }
+    
+    }
+    
+  
+
+
+
+
+
+function bunneh() {
+
+dragElement(document.getElementById("dragBunneh"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+    if (pos3 <= 350 && pos4 >= 400) {
+     
+    
+            document.getElementById("conAir2").innerHTML = '<img src="CageAssets/cagewink.gif"> <br><button type="button" onclick="howdoilive() + closeNextVid()+ closeFaceVid() + nextReset()"> Reunite with your loving wife and daughter </button>'; 
+          }
+    }
+  }
+
+  
+    
+
+ 
+
+
+
+}
+function closeConAirVid() {
+
+
+  document.getElementById('vidContainer').innerHTML = "";
+
+
+document.getElementById('conAirContainer').innerHTML = `
+          <div id="conAir2">
+
+<div id="conAirDrag" onmouseover="bunneh()">
+<img  id="dragBunneh" src="CageAssets/bunneh.png" > 
+  </div>
+
+  <div id="bawxBase"></div>
+  <img  id="bawxBase" src="CageAssets/bawx.png" > 
+  <img src="CageAssets/bawxcover.png" > 
+  <img src="CageAssets/putthebun.png">
+</div>
+</div>
+`;
+document.getElementById('conAirContainer').style.height = "600px";
+}
+
+function closeNextVid() {
+
+  document.getElementById('vidContainer').innerHTML = "";
+     
+
+}
+
+
+function closeFaceVid() {
+
+  document.getElementById('vidContainer').innerHTML = "";
+
+
+          document.getElementById('faceOff').innerHTML = `
+          <br>
+  <br>
+ 
+  <br>
+<div id="faceOffBox" ></div>
+<div id="faceOffDrag" onmouseover="takeHisFaceOff()">
+    
+
+    <img id="johnFace" src="CageAssets/faceJohn.png">
+    
+    <img id="cageFace" src="CageAssets/faceCage.png">
+
+</div>
+
+<div id="faceOffEnd">     </div>
+<div id="faceOffPrompt">
+<img src="CageAssets/faceoff.png"  height="150px">
+</div>
+`;
+document.getElementById('faceOff').style.height = "600px";
+}
+
+
+
+function howdoilive() {
+
+ 
+document.getElementById("conAir2").innerHTML = '<img src="CageAssets/cage2.gif" height="170px"> <br> <img src="CageAssets/cage1.gif" height="170px">  <br> <img src="CageAssets/cage3.gif"> <iframe id="vidContainer" width="200" height="200" src="https://www.youtube.com/embed/AIzLHtHNFQU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   <img src="CageAssets/cage4.gif"> <br> <img src="CageAssets/cage5.gif"> <img src="CageAssets/cage6.gif" height="155px"> <br> <img src="CageAssets/Cage7.gif" height="200px"> <br> <button type="button" onclick="closeConAirVid()"> Stop music </button>'  ; 
+document.getElementById('conAirContainer').style.height = "1000px";
+
+}
+
+
+function howdoilive2() {
+
+
+document.getElementById("next1").innerHTML = '<iframe id="vidContainer" width="200" height="200" src="https://www.youtube-nocookie.com/embed/55pyeGEA2Po?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <img src="CageAssets/next2.gif" height="170px"> <img src="CageAssets/next1.gif" height="170px"> <br>  <img src="CageAssets/nextwalk.gif" height="170px"> <br>   <img src="CageAssets/next3.gif"> <br> <br> <button type="button" onclick="nextFail1()"> Not this agian! Stop the music!! </button>'  ; 
+
+
+document.getElementById('nicCageNext').style.height = "600px";
+
+}
+
+function howdoilive3() {
+
+document.getElementById("faceOff").innerHTML = '<img src="CageAssets/face1.gif" height="170px"> <img src="CageAssets/face2.gif" height="170px"> <br>  <img src="CageAssets/face3.gif" > <iframe id="vidContainer" width="200" height="200" src="https://www.youtube-nocookie.com/embed/mzrxfKCY8Bo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <br> <img src="CageAssets/face5.gif" height="170px"> <br><br> <button type="button" onclick="closeFaceVid()"> Goddammit you two! This joke agian?! Its not even Cage! STOP DA MUSIC!!! </button>'  ; 
+document.getElementById('faceOff').style.height = "600px";
+
+}
+
+
+function nextMain() {
+ 
+columboPage = 0;
+poolCount = 0;
+document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextawake.gif"><br> <h2> Visions of an uncertain future startle you awake. Was it just a dream or something worse?<h2>  <button type="button" onclick="nextColumboCheck()"> Play pool with Columbo </button> <button type="button" onclick="howdoilive2() + closeFaceVid() + closeConAirVid()"> Find your soulmate at the diner </button> <br> <br> <button type="button" onclick="nextReset()"> Back to title screen </button>'  ; 
+document.getElementById('nicCageNext').style.height = "400px";
+
+}
+
+function nextColumboCheck() {
+
+if (columboPage == 0 ) {
+
+
+document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextcolumbo1.gif"><br> <h2> YEAHHHHH!!! That was fun!!!' + ' (x' + poolCount + ')</h2><br> <h2>Maybe you should ask Columbo for some advice?</h2>  <button type="button" onclick="nextColumboPage()"> Ask for advice </button>  <button type="button" onclick="addPoolCount()"> Play more pool! </button> '  ; 
+  document.getElementById('nicCageNext').style.height = "400px";
+
+} else if (columboPage == 1) {
+  document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextcolumbo2.gif"><br> <h2> Yknow I got this cousin, says he can see da future. Now, I never really believed in that stuff, but my wife? forgettaboutit! Shes always tryin to help me solve da cases by callin him. hes a nice guy, maybe he can see da future but ah yknow, solvin cases takes patience and hard work!  <h2>   <button type="button" onclick="nextColumboPage()"> Become a detective and search for clues! </button>  <button type="button" onclick="addPoolCount()"> Play more pool! </button>  '  ; 
+
+
+} else if (columboPage == 2) {
+  document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextcolumbo3.gif"><br> <h2> Hold on, Nick! oh, ahm sorry; theres just one more thing! I shoulda mentioned it earlier, but these things escape me sometimes yknow. The guy youre lookin for, I saw him at the docks the otha day! <h2>   <button type="button" onclick="nextColumboPage()"> Oh that was easy! Confront the guy! </button>  <button type="button" onclick="addPoolCount()"> Stay and play more pool! </button> '  ; 
+
+ 
+
+  } else if (columboPage == 3) {
+
+  document.getElementById("next1").innerHTML = '<br> <br> <img src="CageAssets/nextfight1.gif"><br> <h2> Damn, He has a gun! You are going to have to dodge the bullets! <h2>   <button type="button" onclick="nextColumboPage()"> Savescumming has prepared you for this moment! (its going to hurt alot though!) </button>  '  ; 
+
+  document.getElementById("vidContainer").innerHTML = `<iframe id="vidContainer"  width="200" height="200" src="https://www.youtube-nocookie.com/embed/n3_c9djkr08?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+  } else if (columboPage == 4) {
+  document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextfight2.gif"><br> <h2> You died like.. alot! Thats going to keep you up at night! <h2>  <button type="button" onclick="nextColumboPage()"> Distract him long enough for someone to shoot him!</button>  '  ; 
+
+
+  } else if (columboPage == 5) {
+  document.getElementById("next1").innerHTML = '  <br> <br> <img src="CageAssets/nextfight3.gif"><br> <h2> Oh no! Looks like this guy has vaugely explained superpowers as well! </h2> <p>(wait did he like die and rewind time... or is he bullet proof?)</p> <h2>Stop asking questions!</h2>   <button type="button" onclick="nextColumboPage()"> Do something unpredictable! </button>  '  ; 
+  document.getElementById('nicCageNext').style.height = "400px";
+
+  } else if (columboPage == 6) {
+  document.getElementById("next1").innerHTML = '<iframe id="vidContainer" width="200" height="200" src="https://www.youtube-nocookie.com/embed/WhrbK254yRE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <br> <br> <img src="CageAssets/nextactivate.gif"><br> <h3> In a very smart move, you activate a nuclear bomb! Hah he never saw that coming!</h3> <br> <img src="CageAssets/nextboom2.gif"> <h3> YOU FAILED: Im not sure why you thought that was a good idea :/ </h3> <br> <button  type="button" onclick="nextMain() + closeNextVid()"> Wake up! </button>  '  ; 
+  document.getElementById('nicCageNext').style.height = "500px";
+
+  }
+
+
+
+}
+
+function addPoolCount() {
+ poolCount += 1;
+ columboPage = 0;
+ nextColumboCheck();
+
+ if (poolCount == 5 ) {
+
+
+document.getElementById("next1").innerHTML = '<iframe id="vidContainer" width="200" height="200" src="https://www.youtube-nocookie.com/embed/rm15NTuBPdo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <h1> YOU WIN </h1> <img src="CageAssets/cagehair.gif"> <br> <h3> Spending time with Columbo has eased your mind. The visions are gone, there is no more danger.</h3> <br> <p> Nicolas Cage can rest easy.... For now! </p>   <br> <button type="button" onclick="nextReset() + closeNextVid()"> Back to title screen </button>'  ; 
+document.getElementById('nicCageNext').style.height = "500px";
+
+}
+}
+
+
+function nextColumboPage() {
+ columboPage += 1;
+ nextColumboCheck();
+}
+
+
+function nextFail1() {
+
+document.getElementById("next1").innerHTML = '<iframe id="vidContainer" width="200" height="200" src="https://www.youtube-nocookie.com/embed/WhrbK254yRE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <br> <img src="CageAssets/next4.gif"><br>      <p> YOU FAILED: You were a weirdo at the diner </p> <br><br><br> <img src="CageAssets/nextboom2.gif"> <p> Also the world blows up lol <p> <button type="button" onclick="nextMain() + closeNextVid()"> Wake up! </button>'  ; 
+  document.getElementById('nicCageNext').style.height = "500px";
+
+}
+
+function nextReset() {
+  document.getElementById('vidContainer').innerHTML = "";
+  columboPage = 0;
+poolCount = 0;
+document.getElementById("next1").innerHTML = ' <img src="CageAssets/next.jpg"> <h2> GUEST STARRING</h2><img src="CageAssets/nextcolumbo.jpg" height="200px"><br><img src="CageAssets/columbotitletest.png"><br><br><button type="button" onclick="nextMain()"> Begin adventure!</button>'  ; 
+document.getElementById('nicCageNext').style.height = "550px";
+
+}
+    </script>
+</body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/nicCage by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:02:28 GMT -->
+</html>

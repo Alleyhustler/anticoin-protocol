@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/Lunacid by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:02:28 GMT -->
+<head>
+    <title>Lunacid fan-site!</title>
+      
+        <link  rel="stylesheet" href="LunaAssets/lunaStyle.css">
+        <script type="text/javascript" src="LunaAssets/lunaWepsRings.js"></script>
+        <script type="text/javascript" src="LunaAssets/lunaPlayer.js"></script>
+        <script type="text/javascript" src="LunaAssets/lunaMonsters.js"></script>
+      </head>
+  
+      <body class="lunaBase"> 
+        <div id="lunaHeader"> 
+        <a href="home.html"> <img src="back.gif" height="40px"></a>
+        <br>
+        <img src="LunaAssets/LunacidLogo.png">       
+        <br> 
+          <iframe width="140" height="100" src="https://www.youtube-nocookie.com/embed/8Cc7tDkhPyQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div id="lunaContainer">
+          <div id="lunaDisclaimer">
+          <h1>Welcome to my Lunacid fan-site! </h1>
+          <h2>This page is dedicated to the game Lunacid! Please be aware that I will be documenting characters, items and lore; so major spoilers are to be expected. Lunacid is at its best as you explore and discover secrets on your own; I would highly recommend avoiding reading up on any details until you have played through most of the game!  </h2>
+          <h3> Lastly, this is just a little passion project because I'm having so much fun with the game! I'm not a professional, so don't expect maps and super detailed descriptions about stats. I'm just documenting things as I see them in my own playthroughs!</h3>
+<p>Originally written as of beta 0.9.7</p>
+<p>Partially updated as of release 1.0.2 </p>
+
+          <button onclick=proceed()> Proceed </button>
+
+      </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div id="lunaNavBar"></div>
+      <div id="lunaNavBar2"></div>
+        
+          <div id="lunaSelection"></div>
+           
+    <script>
+  // translator stuff
+
+
+var charPos = 0;
+var translatedString = "";
+// the box indicating where the next character will go should be be calculated based on the spacing per letter (25px as an example) multiplied by the (next?) character's position
+var charPosOutline = 0;
+
+
+
+const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+function updateString(){
+  
+  document.getElementById("runeStringDisplay").innerHTML =  translatedString;
+
+  charPosOutline = charPos * 30;
+  document.getElementById("runeStringPos").style.left = charPosOutline + "px";
+
+  if (charPos >= 30){
+    document.getElementById("runeStringPos").style.backgroundColor = `rgba(255, 255, 255, 0)`;
+  } else {
+    document.getElementById("runeStringPos").style.backgroundColor = `rgba(255, 255, 255, 0.404)`;
+
+  };
+}
+
+
+
+
+ 
+
+  function genRuneImgs() {
+  for (var i = 0; i < alphabet.length; i++) {
+    document.getElementById("runeImgs").innerHTML +=  
+  `
+  <div id=runeImgsContainer> 
+    <a href="#runeImgsContainer"><img src="LunaAssets/LunaLetters/`+alphabet[i]+`.png" onclick="rune`+alphabet[i]+`()"> </a>
+
+ <div id="runeLet"> <p>`+alphabet[i]+`</p></div>
+</div>
+  `;
+}
+
+//seperate addition for space button
+document.getElementById("runeImgs").innerHTML +=
+`
+<br>
+<button onclick="runeSpace()"> space </button>
+<br>
+<br>
+<button onclick="runeBackspace()"> backspace </button>
+<button onclick="runeClear()"> Clear </button>
+`
+  }
+
+//so now all images are generated with associated functions which will add a single letter to this overarching string
+//now I need to figure out how to generate, display and modify this string.
+ </script>           
+       
+       <script id="runeFuncts">
+function runeA() {
+  if (charPos <= 29) {
+  translatedString += "A";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeB() {
+  if (charPos <= 29) {
+  translatedString += "B";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeC() {
+  if (charPos <= 29) {
+  translatedString += "C";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeD() {
+  if (charPos <= 29) {
+  translatedString += "D";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeE() {
+  if (charPos <= 29) {
+  translatedString += "E";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeF() {
+  if (charPos <= 29) {
+  translatedString += "F";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeG() {
+  if (charPos <= 29) {
+  translatedString += "G";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeH() {
+  if (charPos <= 29) {
+  translatedString += "H";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeI() {
+  if (charPos <= 29) {
+  translatedString += "I";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeJ() {
+  if (charPos <= 29) {
+  translatedString += "J";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeK() {
+  if (charPos <= 29) {
+  translatedString += "K";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeL() {
+  if (charPos <= 29) {
+  translatedString += "L";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeM() {
+  if (charPos <= 29) {
+  translatedString += "M";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeN() {
+  if (charPos <= 29) {
+  translatedString += "N";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeO() {
+  if (charPos <= 29) {
+  translatedString += "O";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeP() {
+  if (charPos <= 29) {
+  translatedString += "P";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeQ() {
+  if (charPos <= 29) {
+  translatedString += "Q";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeR() {
+  if (charPos <= 29) {
+  translatedString += "R";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeS() {
+  if (charPos <= 29) {
+  translatedString += "S";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeT() {
+  if (charPos <= 29) {
+  translatedString += "T";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeU() {
+  if (charPos <= 29) {
+  translatedString += "U";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeV() {
+  if (charPos <= 29) {
+  translatedString += "V";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeW() {
+  if (charPos <= 29) {
+  translatedString += "W";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeX() {
+  if (charPos <= 29) {
+  translatedString += "X";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeY() {
+  if (charPos <= 29) {
+  translatedString += "Y";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeZ() {
+  if (charPos <= 29) {
+  translatedString += "Z";
+  charPos += 1;
+  updateString()
+  }
+}
+
+function runeSpace() {
+  if (charPos <= 29) {
+  translatedString += "-";
+  charPos += 1;
+  updateString()
+  }
+}
+function runeBackspace() {
+  if (charPos >= 1) {
+  translatedString = translatedString.slice(0, -1); 
+  charPos -= 1;
+  updateString()
+}
+}
+function runeClear() {
+  translatedString = ""; 
+  charPos = 0;
+  charPosOutline = 0;
+  updateString()
+}
+
+       </script>
+
+<script>
+
+
+
+
+function proceed(){
+  document.getElementById("lunaContainer").innerHTML = ``
+  
+  document.getElementById("lunaNavBar").innerHTML = `
+ <a href="#lunaNavBar" onclick=spawnPlayer()> <div id="lunaNavItem"> <h2>Player</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnLocations()><div id="lunaNavItem"> <h2>Locations</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnWeapons()><div id="lunaNavItem"> <h2>Weapons</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnRings()><div id="lunaNavItem"> <h2>Rings</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnItems()><div id="lunaNavItem"> <h2>Items</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnLore()><div id="lunaNavItem"> <h2>Lore</h2></div></a>
+
+`
+
+document.getElementById("lunaNavBar2").innerHTML = `
+<a href="#lunaNavBar" onclick=spawnMonsters()><div id="lunaNavItem"> <h2>Monsters</h2></div></a>
+<a href="#lunaNavBar" onclick=notYet()><div id="lunaNavItem"> <h2>Mysteries</h2></div></a>
+<a href="#lunaNavBar" onclick=spawnTranslator();genRuneImgs();><div id="lunaNavItem"> <h2>Translator</h2></div></a>
+`
+}
+
+function notYet() {
+  document.getElementById("lunaSelection").innerHTML = ` 
+ 
+  <br>
+  <img id="playerPortraits" src="LunaAssets/KingsFieldNotYet.gif" onclick="genRuneImgs()">
+`
+ 
+}
+
+function spawnTranslator(){
+  
+  document.getElementById("lunaSelection").innerHTML = ` 
+ 
+
+ <br>
+
+   <div id="runeImgs"></div>
+   
+   <br>
+ <div id="runeStringContainer"><p id="runeStringDisplay"></p><div id="runeStringPos"></div></div>
+ `
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+function spawnLocations() {
+  document.getElementById("lunaSelection").innerHTML = `
+  <div id="lunaLocations"> 
+    <br>
+            <div title="Wings Rest" id="wingsRest" onmouseover="wingHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Hollow Basin" id="hollowBasin" onmouseover="hollowHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="The Fetid Mire" id="fetidMire" onmouseover="fetidHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Accursed Tomb" id="cursedTomb" onmouseover="tombHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Yosei Forest" id="yoseiForest" onmouseover="yoseiHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Le Fanu Castle" id="fanuCastle" onmouseover="fanuHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Boiling Grotto" id="boilingGrotto" onmouseover="grottoHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Forbidden Archive" id="forbiddenArchive" onmouseover="archiveHover()" onmouseout="locationHoverNone()"> </div>
+            <br>
+            <div title="The Sanguine Sea" id="sanguineSea" onmouseover="sanguineHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Temple of Silence" id="templeSilence" onmouseover="templeSilenceHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Laetus Chasm" id="laetusChasm" onmouseover="laetusHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Great Well Surface" id="wellSurface" onmouseover="wellHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Forest Canopy" id="forestCanopy" onmouseover="canopyHover()" onmouseout="locationHoverNone()"> </div>
+            <div title="Tower Of Abyss" id="towerAbyss" onmouseover="towerHover()" onmouseout="locationHoverNone()"> </div>
+         <br>
+         <div id="locationHover"><h2>Hovering on:</h2> </div>
+         
+         
+         
+         
+            </div>
+
+    
+
+
+`;
+}
+
+                function locationHoverNone() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on:</h2>';
+
+              }
+
+              function wingHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Wings Rest</h2>';
+
+              }
+              function hollowHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Hollow Basin</h2>';
+
+              }
+              function fetidHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: The Fetid Mire</h2>';
+
+              }
+              function tombHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Accursed Tomb</h2>';
+
+              }
+              function yoseiHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Yosei Forest</h2>';
+
+              }
+              function fanuHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Le Fanu Castle</h2>';
+
+              }
+              function grottoHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Boiling Grotto</h2>';
+
+              }
+              function archiveHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Forbidden Archive</h2>';
+
+              }
+              function templeSilenceHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Temple of Silence</h2>';
+
+              }
+              function sanguineHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: The Sanguine Sea</h2>';
+
+              }
+              function laetusHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Laetus Chasm</h2>';
+
+              }
+              function wellHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Great Well Surface</h2>';
+
+              }
+              function canopyHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Forest Canopy</h2>';
+
+              }
+              function towerHover() {
+                document.getElementById("locationHover").innerHTML = '<h2>Hovering on: Tower Of Abyss</h2>';
+
+              }
+
+function spawnLore() {
+  document.getElementById("lunaSelection").innerHTML = `
+  <div id="lunaLoreContainer">              
+  <div id="loreSelect">
+
+                <a href="#loreSelect" onclick=cliveLore()><div id="cliveLore"><h2>Clive's Stories</h2></div></a>
+                <a href="#loreSelect" onclick=opheliaLore()><div id="opheliaLore"><h2>Ophelia's Letters</h2></div></a>
+                <a href="#loreSelect" onclick=librairyLore()><div id="librairyLore"><h2>The Library</h2></div></a>
+
+              </div>
+
+                <div id="lunaLore"></div>
+
+
+          
+
+              </div>
+
+`;
+}
+
+function cliveLore(){
+  document.getElementById("lunaLore").innerHTML = `
+  <h2>Clive's Stories</h2>
+                <h3>Monks (Demi?)</h3>
+                <p>Did I ever tell ya about how those monks got banished here? Way back during the crusades, people of all sorts came down here with righteous fury. I guess they were afraid of an eventual uprising or something. And back then, there were still many ways outta here. Anyway, there was this sect of holy monks who wanted in on that action, but monks typically didn't fight and weren't allowed outside their monastery. So they all decided they would use their magic to help, by summoning a demon. I think their plan was to kill it, but after the ritual they were surprised to find out the demon was an infant, instead of some giant brute. They couldn't bring themselves to kill her, so they actually raised her in the monastery. After the crusades ended, the church heard about it. And so they all ended up here. They built this sanctuary, and lived here for a long while. But that was so long ago. I guess they're all gone now. At least, I think that's how it happened. My memory ain't that good.</p>
+                <h3>The Assassin (Sheryl?)</h3>
+                <p>Did I ever tell ya about that assassin that got trapped here? About 40 or so years ago, or maybe it was 80 I don't remember. There was an Assassin, of some renown. They had a viscous reputation and always got their mark. But They realized that sooner or later, they'd start to run out of targets. And eventually they'd be the one wanted dead in the outworld. So they took an impossible job, one that required them to kill someone that was banished here. They knew there wasn't going to be a way back whether they were successful or not. But it didn't matter to them I guess. And so the rumor is that they settled down here. And even took on a new profession. Something about collecting from the dead and reselling stuff, instead of making people dead.</p>
+                <h3>The Wicked King of Rats</h3>
+                <p>Did I ever tell you about the wicked king of rats? The legend goes that long ago during the first age of magic a witch king ruled in a starving kingdom. While his magic was great, he withheld the castle's bountiful provisions and let his kingdom wither. 'Let them eat the rats' He declared to his knights, who eventually betrayed him. He was not sentenced to death by his knights, but exile in the cavernous depths carved from the flowing moonlight. His eyes were plucked out so he could never look up from the well. One of his arms was cut off so he could never climb out. And rats surrounded him, his only nourishment. Over the years he would continuously starve but never died. Using the last of his magic, the exiled witch king turned himself to stone. And the legend goes that in the deepest reaches of the depths, there is a crumbling statue of him, one worshipped by rats.</p>
+                <h3>The Witch (Etna?)</h3>
+                <p>Did I ever tell you about the great witch who escaped the GREAT WELL? The story goes that there was a child thrown into the well. Orphanages would do this practice regularly to keep from being overwhelmed. But this child was special. For they were quite adept at magic and alchemy. And while still in their childhood they accomplished what many could not. They escaped the GREAT WELL, by astral projection. They projected further than any had done before, and made it to the outworld. But they found no solace in the world above. And eventually they returned. As they came back down they found that their mortal body had perished. They had freedom, but were as a ghost. And the tales speak that they are still down here, helping others and still practicing alchemy.</p>
+            <br>
+           
+`;
+}
+
+function opheliaLore(){
+document.getElementById("lunaLore").innerHTML = `
+<h2>Ophelia's Letters</h2>
+            <h3>17/04/0578 M.A. (Jusztina Fanu to Ophelia of Lyria)</h3>
+            <p>
+I write this letter fervently my sweet Ophelia, for it presents itself that I, last living of the Fanu line, might have finally solved my family curse. 
+As you know, our castle has always unnaturally attracted the great fog beasts. And of which your annihilation, I've much been affectionate.
+But today, I have found the cause. Please return to me as soon as you can.
+            </p>
+            <h3>17/05/0578 M.A. (Ophelia of Lyria to Jusztina Fanu) </h3>
+            <p>Dear Lady, I've read your words again and again for it brings me unforeseen delight to hear that you have finally beaten your family curse.
+  I ride now, from our great battlefield on the outskirts to your estate. I will have this steed fly like it never has before, but I presume the raven which brings this letter might arrive sooner.</p>
+            <h3>17/19/0578 M.A. (Jusztina Fanu to self) </h3>
+            <p>Dear Diary, Oh how sweet and joyous it is, but still difficulty, division and melancholy fills my still heart. With one bite, merely a simple drop of blood, I overcame my family curse. If only I had found this gift sooner, I would not be the last of Fanu.</p>
+            <h3>17/25/0578 M.A. (Jusztina Fanu to self) </h3>
+            <p>Dear Diary, I read of those with this gift before. Oh but the sun! HA! If they knew what would become of that dim orb behind the fog. Ophelia found this amusing as well. I have yet to bestow her with this, or burden her so. She is so dedicated to serving as a knight that she pledged for it immediately. But that is not what I long for, Ophelia! There are none who stand above us now. None to take away our kinship. No reason left not to pursue happiness in your arms and in your kisses. I must know that she feels the same before sharing this gift, I cannot stand to wait a lifetime.</p>
+            <h3>17/29/0578 M.A. (Ophelia of Lyria to Jusztina Fanu)</h3>
+            <p>I rub my eyes, for tears and to make sure I'm not simply in a dream. My love, my sweet Jusztina. I never thought we'd be entwined, but we outlived all those who would stand against us. And with this great gift, we'll outlive any others. I drank her blood, and she mine. So different from blood shed in battle, we shed blood in love.</p>
+            
+            
+            <br>
+          
+
+
+
+
+  `;
+}
+
+
+function librairyLore(){
+document.getElementById("lunaLore").innerHTML = `
+
+            <h2>The Library</h2>
+            <h3>History of the Ages, Volume 17, excerpt 5</h3>
+            <p>A breaking point in the dark war. King Griffith became the first human to acquire magic by drinking the cranial fluid of a felled Jotunn. This knowledge soon became common and many created entire armies of spellswords. The creatures are driven back, and this begins the first age of magic.</p>
+            <h3>History of the Ages, Volume 17, excerpt 6.</h3>  
+            <p>Of all the kingdoms, Lyria embranced magic the most. If the tales can be trusted, a Lyrian caused the crying moon. Whether on purpose or not is unknown, but the flowing moonlight cascaded directly on Lyria, enveloping it in silver liquid, drowning it down into the Earth.</p>
+            <h3>History of the Ages, Volume 17, excerpt 7.</h3>  
+            <p>The first age of magic ended while the moonlight continued to fall, carving its way into the Earth. And after a series of corrupt rulers and mages, mankind grew to distrust magic. They began sending them 'back to Lyria' by throwing them into the cascading silver liquid.</p>
+            <h3>History of the Ages, Volume 17, excerpt 8.</h3>  
+            <p>After the brief second age of magic, the Great Well was constructed. Directly over the hollowed void from the barely seeping moonlight. Three of the great kingdoms formed a trust banishing most magic. They together founded a new feudal rule, the Golden Lance over the ruins of Lyria.</p>
+            <h3>History of the Ages, Volume 17, excerpt 9.</h3>
+            <p>The Golden Lance ruled for several generations until it was found that they harbored and practiced forbidden magics. The outrage resulted in a long civil war eventually seeing an end to their rule and sparking the Crusades.</p>
+
+  `;
+}
+
+
+
+
+
+
+
+ function spawnItems() {
+  document.getElementById("lunaSelection").innerHTML = `
+ <div id="lunaItemContainer">
+  <br>
+            <div id="lunaItem" onclick=antidoteToggle()>
+            <div id="lunaItemPic"><img src="LunaAssets/items/Antidote.png"></div>
+            <div id="lunaItemName"><h1>Antidote</h1> <hr></div>
+            <div id="lunaItemDescription">
+            <p>[Craftable]</p>
+            <p>A small vial of detoxified poison. Cures the drinker of any current poisonous afflictions.</p>
+          <p>Crafted with 2 destroying angel mushrooms and a lotus seed pod.</p>
+            </div>
+            </div>
+        
+            <div id="lunaItem">
+              <div id="lunaItemPic"><img src="LunaAssets/items/Black Book.png"></div>
+              <div id="lunaItemName"><h1>Black Book</h1><hr></div>
+              <div id="lunaItemDescription">
+              <p>[Rare Item]</p>
+              <p>An old book thoroughly soaked in ink. Who knows what knowledge it's illegible pages once held?</p>
+            </div>
+            </div>
+              <br>
+              <div id="lunaItem">
+                <div id="lunaItemPic"><img src="LunaAssets/items/Blood%20Wine.png"></div>
+                <div id="lunaItemName"><h1>Blood Wine</h1> <hr></div>
+                <div id="lunaItemDescription">
+                <p>[Rare Item]</p>
+             <p>Wine made from fermented blood. A delicacy in aristocratic and vampiric circles. Restores one's blood and health if vampiric, otherwise poisonous</p>
+            </div>    
+            </div>
+                <br>
+                <div id="lunaItem">
+                  <div id="lunaItemPic"><img src="LunaAssets/items/Bomb.png"></div>
+                  <div id="lunaItemName"><h1>Bomb</h1> <hr></div>
+                  <div id="lunaItemDescription">
+                  <p>[Craftable]</p>
+                <p> A simple but powerful device. Creates an explosion after 7 seconds that deals heavy fire damage to everything that surrounds it.</p>
+                  <p> Transfused of 2 parts simple ashes, and a fire opal</p>
+                </div>
+              </div>
+                  <br>
+                  <div id="lunaItem">
+                    <div id="lunaItemPic"><img src="LunaAssets/items/Cloth Bandage.png"></div>
+                    <div id="lunaItemName"><h1>Cloth Bandage</h1> <hr></div>
+                    <div id="lunaItemDescription">
+                  <p> A simple bandage to prevent excessive bleeding. Restores blood and stops any current bleeding.</p>
+                </div>
+                    </div>
+                    <br>
+                    <div id="lunaItem">
+                      <div id="lunaItemPic"><img src="LunaAssets/items/Corrupt Key.png"></div>
+                      <div id="lunaItemName"><h1>Corrupt Key</h1> <hr></div>
+                      <div id="lunaItemDescription">
+                      <p>[Secret Item]</p>
+                   <p>...</p> 
+                  </div>
+                      </div>
+                    <br>
+                    <div id="lunaItem">
+                      <div id="lunaItemPic"><img src="LunaAssets/items/Crystal Lantern.png"></div>
+                      <div id="lunaItemName"><h1>Crystal Lantern</h1> <hr></div>
+                      <div id="lunaItemDescription">
+                      <p>[Rare Item]</p>
+                   <p> A magical lantern. Affixes to the wielder's beld and illuminates until doused by the user.</p>
+                   <p> Reward for surviving the Tower of Abyss </p>
+                   </div>   
+                  </div>
+                      <br>
+                      <div id="lunaItem">
+                        <div id="lunaItemPic"><img src="LunaAssets/items/Crystal%20Shard.png"></div>
+                        <div id="lunaItemName"><h1>Crystal Shard</h1> <hr></div>
+                        <div id="lunaItemDescription">
+                        <p>[Craftable]</p>
+                      <p>A fragile shard of a crystal. By breaking it, the magic that is released surrounds the user and warps them back to wing's rest.</p>
+                    </div>    
+                    </div>
+                    <br>
+                      <div id="lunaItem">
+                        <div id="lunaItemPic"><img src="LunaAssets/items/Dried Rat.png"></div>
+                        <div id="lunaItemName"><h1>Dried Rat</h1> <hr></div>
+                        <div id="lunaItemDescription">
+                        <p>[Rare Item]</p>
+                      <p>A terrible dried rat. Kept for unknown reasons.</p>
+                      <p> How to obtain - Given by Demi during second visit to Wings Rest if player is a Thief or Forsaken</p>
+                      </div>    
+                    
+                    </div>
+                        <br>
+                        <div id="lunaItem">
+                          <div id="lunaItemPic"><img src="LunaAssets/items/Earth Elixir.png"></div>
+                          <div id="lunaItemName"><h1>Earth Elixir</h1> <hr></div>
+                          <div id="lunaItemDescription">
+                          <p>[Rare Item]</p>
+                        <p>A flash of enchanted water embodying the spirit of the earth. By drinking it, one becomes closer to the earth and gains +40 maximum health permanently.</p>
+                      </div>    
+                      </div>
+                          <br>
+                          <div id="lunaItem">
+                            <div id="lunaItemPic"><img src="LunaAssets/items/Enchanted Key.png"></div>
+                            <div id="lunaItemName"><h1>Enchanted Key</h1> <hr></div>
+                            <div id="lunaItemDescription">
+                            <p>[Quest Item]</p>
+                          <p>A bewitched key made from ocean bone. Able to remove the old enchanted gates that were put in place after the crusades</p>
+                          <p> How to obtain-  Sold by Sheryl during first visit to Wings Rest. Required to progress. A second key is given by Patchouli for a quest.</p>
+                          </div>    
+                        </div>
+                            <br>
+                            <div id="lunaItem">
+                              <div id="lunaItemPic"><img src="LunaAssets/items/Fairy Moss.png"></div>
+                              <div id="lunaItemName"><h1>Fairy Moss</h1> <hr></div>
+                              <div id="lunaItemDescription">
+                              <p>[Craftable]</p>
+                            <p> A clump of rutabulum that slowly heals the user for 60 seconds.</p>
+                          <p>Created with a moon petal, bloodweed, and a yellow morel.</p>
+                            </div>    
+                          </div>
+                              <br>
+                            <div id="lunaItem">
+                              <div id="lunaItemPic"><img src="LunaAssets/items/Health Vial.png"></div>
+                              <div id="lunaItemName"><h1>Health Vial</h1> <hr></div>
+                              <div id="lunaItemDescription">
+                              <p>[Craftable]</p>
+                            <p>A golden vial of blood that fully recovers the drinker's vitality. Given to knights during the subterranean crusades. These vials remain as a precious relic of that time. </p>
+                            <p>Created by combining opal, yellow morel, and a lotus seed pod.</p>
+                            </div>    
+                          </div>
+                              <br>
+                              <div id="lunaItem">
+                                <div id="lunaItemPic"><img src="LunaAssets/items/Health%20Vial.png"></div>
+                                <div id="lunaItemName"><h1>Health Vial?</h1> <hr></div>
+                                <div id="lunaItemDescription">
+                             <p>A golden vial of blood that fully recovers the drinker's vitality? Given to knights during the subterranean crusades? These vials remain as a precious relic of that time?</p>
+                            </div>    
+                            </div>
+                                <br>
+                                <div id="lunaItem">
+                                  <div id="lunaItemPic"><img src="LunaAssets/items/Holy Water.png"></div>
+                                  <div id="lunaItemName"><h1>Holy Water</h1> <hr></div>
+                                  <div id="lunaItemDescription">
+                                <p>Enchanted water that is used to cure all ailments. Often very diluted so the knights or clergymen would not be burned by the holy light, should they be less than saintly. </p>
+                              </div>    
+                              </div>
+                                  <br>
+                                  <div id="lunaItem">
+                                    <div id="lunaItemPic"><img src="LunaAssets/items/Light Urn.png"></div>
+                                    <div id="lunaItemName"><h1>Light Urn</h1> <hr></div>
+                                    <div id="lunaItemDescription">
+                                  <p> A fragile urn filled with holy light. Typically thrown at enemies.</p>
+                                </div>    
+                                </div>
+                                    <br>
+                                    <div id="lunaItem">
+                                      <div id="lunaItemPic"><img src="LunaAssets/items/Mana Vial.png"></div>
+                                      <div id="lunaItemName"><h1>Mana Vial</h1> <hr></div>
+                                      <div id="lunaItemDescription">
+                                      <p>[Craftable]</p>
+                                    <p> A silver vial of liquid that fully recovers the drinker's magic ability. Made from the cranial fluid of magic adept beasts during the birth of magic.</p> 
+                                    <p> Created by combining opal, onyx and a lotus seed pod.</p>    
+                                    </div>    
+                                  </div>
+                                      <br>
+                                      <div id="lunaItem">
+                                        <div id="lunaItemPic"><img src="LunaAssets/items/Moonlight%20Vial.png"></div>
+                                        <div id="lunaItemName"><h1>Moonlight Vial</h1> <hr></div>
+                                        <div id="lunaItemDescription">
+                                        <p>[Craftable]</p>
+                                      <p>A small vial of precious moonlight liquid. Fully restores mana and increases lunacy. A rare item indeed, often kept by the magically inclined for dire needs.</p>
+                                    <p>Created with a moon petal, obsidian, and ashes.</p>
+                                      </div>    
+                                    </div>
+                                        <br>
+                                        <div id="lunaItem">
+                                          <div id="lunaItemPic"><img src="LunaAssets/items/Ocean%20Elixir.png"></div>
+                                          <div id="lunaItemName"><h1>Ocean Elixir</h1> <hr></div>
+                                          <div id="lunaItemDescription">
+                                          <p>[Rare Item]</p>
+                                       <p>A flash of enchanted water embodying the spirit of the ocean. By drinking it, one becomes closer to the ocean and gains +40 maximum mana permanently.</p>
+                                      </div>    
+                                      </div>
+                                          <br>
+                                          <div id="lunaItem">
+                                            <div id="lunaItemPic"><img src="LunaAssets/items/Oil%20Lantern.png"></div>
+                                            <div id="lunaItemName"><h1>Oil Lantern</h1> <hr></div>
+                                            <div id="lunaItemDescription">
+                                            <p>[Rare Item]</p>
+                                          <p>A simple oil burning lantern. Affixes to the wielder's belt and illuminates until doused from the user or enviroment.</p>
+                                          <p>Sold by Sheryl after breaking Sir Hicket's armor<p>
+                                          </div>   
+                                        </div>
+                                        <br>
+                                          <div id="lunaItem">
+                                            <div id="lunaItemPic"><img src="LunaAssets/items/Poison%20Throwing%20Knife.png"></div>
+                                            <div id="lunaItemName"><h1>Poison Throwing Knife</h1> <hr></div>
+                                            <div id="lunaItemDescription">
+                                            <p>[Craftable]</p>
+                                          <p>A simple thrown weapon made of sharpened ocean bone and laced with a fungal poison. Normally used by thieves and assassins to deal damage from afar.</p>
+                                          <p>Transfused with a destroying angel mushroom and 2 ocean bone shells.</p>
+                                          </div>   
+                                        </div>
+                                            <br>
+                                            <div id="lunaItem">
+                                              <div id="lunaItemPic"><img src="LunaAssets/items/Poison%20Urn.png"></div>
+                                              <div id="lunaItemName"><h1>Poison Urn</h1> <hr></div>
+                                              <div id="lunaItemDescription">
+                                            <p> A fragile urn filled with poisonous smoke. Typically thrown at enemies.</p>
+                                          </div>    
+                                          </div>
+                                              <br>
+                                              <div id="lunaItem">
+                                                <div id="lunaItemPic"><img src="LunaAssets/items/Skull%20of%20Josiah.png"></div>
+                                                <div id="lunaItemName"><h1>Skull of Josiah</h1> <hr></div>
+                                                <div id="lunaItemDescription">
+                                                <p>[Quest Item]</p>
+                                             <p> The large misshapen skull of Josiah The Hermit. Josiah exiled himself, taking refuge within the deep Yosei Forest. Although a longer, he nurtured the simple plants of the forest and would give healing herbs to any passerby.</p>
+                                            <p> Can be found in Forest Canopy</p>
+                                             </div>    
+                                            </div>
+                                                <br>
+                                                <div id="lunaItem">
+                                                  <div id="lunaItemPic"><img src="LunaAssets/items/Spectral%20Candle.png"></div>
+                                                  <div id="lunaItemName"><h1>Spectral Candle</h1> <hr></div>
+                                                  <div id="lunaItemDescription">
+                                                 <p>[Craftable]</p>
+                                                <p> An enchanted blue candle that emits a ghostly flame capable of keeping beasts away.</p>
+                                              <p>Transfused with ectoplasm, ikurr'ilb root, and a fire opal.</p>
+                                                </div>    
+                                              </div>
+                                                <br>
+                                                <div id="lunaItem">
+                                                  <div id="lunaItemPic"><img src="LunaAssets/items/StaffOfOsiris.png"></div>
+                                                  <div id="lunaItemName"><h1>Staff Of Osiris</h1> <hr></div>
+                                                  <div id="lunaItemDescription">
+                                                 <p>[Craftable]</p>
+                                                <p>A staff that strikes into the ground and calls forth lightning from Osiris upon any enemies who approach. Before Osiris was killed by his brother Seth, he gave these to his loyal servants.</p>
+                                              <p>Transfused with onyx, ikurr'ilb root and bones</p>
+                                                </div>    
+                                              </div>
+                                              <br>
+                                                <div id="lunaItem">
+                                                  <div id="lunaItemPic"><img src="LunaAssets/items/StrangeCoin.png"></div>
+                                                  <div id="lunaItemName"><h1>Strange Coin</h1> <hr></div>
+                                                  <div id="lunaItemDescription">
+                                                 <p>[Secret Item]</p>
+                                                <p>A coin made from a soft metal. Just holding it in your palm contorts its form to mimic the lines of your hand. But stowed away it regains its coin-like shape.</p>
+                                              <p>Recieved for performing three specific evil deeds</p>
+                                                </div>    
+                                              </div>
+                                                  <br>
+                                                  <div id="lunaItem">
+                                                    <div id="lunaItemPic"><img src="LunaAssets/items/Survey%20Banner.png"></div>
+                                                    <div id="lunaItemName"><h1>Survey Banner</h1> <hr></div>
+                                                    <div id="lunaItemDescription">
+                                                    <p>[Rare Item]</p>
+                                                  <p>A wooden banner used by scouts to lead armies through the depths. Helps the user navigate by placing it in known locations.</p>
+                                                <p> Can be found in the Accursed Tomb</p>
+                                                <p> While there is a finite supply, banners are soon rendered inferior by the Coffin spell<p>
+                                                  </div>    
+                                                </div>
+                                                <br>
+                                                <div id="lunaItem">
+                                                  <div id="lunaItemPic"><img src="LunaAssets/items/Throwing%20Knife.png"></div>
+                                                  <div id="lunaItemName"><h1>Throwing Knife</h1> <hr></div>
+                                                  <div id="lunaItemDescription">
+                                                  <p>[Craftable]</p>
+                                                <p>A simple thrown weapon made of sharpened ocean bone. Normally used by thieves and assassins to deal damage from afar.</p>
+                                                <p>Transfused with 3 ocean bone shards.</p>
+                                                </div>   
+                                              </div>
+                                                    <br>
+                                                    <div id="lunaItem">
+                                                      <div id="lunaItemPic"><img src="LunaAssets/items/Vampiric%20Symbol%20A.png"></div>
+                                                      <div id="lunaItemName"><h1>Vampiric Symbol (A)</h1> <hr></div>
+                                                      <div id="lunaItemDescription">
+                                                      <p>[Quest Item]</p>
+                                                    <p>A brilliantly shining jewel, embedded with lost tech magic that grants access to azure castle doors within Le Fanu Castle. Blamed for the moonfall along with Lyrians, vampires were driven out an hunted</p>
+                                                  </div>   
+                                                  </div>
+                                                      <br>
+                                                      <div id="lunaItem">
+                                                        <div id="lunaItemPic"><img src="LunaAssets/items/Vampiric%20Symbol%20E.png"></div>
+                                                        <div id="lunaItemName"><h1>Vampiric Symbol (E)</h1> <hr></div>
+                                                        <div id="lunaItemDescription">
+                                                        <p>[Quest Item]</p>
+                                                      <p> A brilliantly shining jewel, embedded with lost tech magic that grants access to emerald castle doors within Le Fanu Castle. With no kingdom left, and no abiding rule above, the vampires of old faded from known existence.</p>
+                                                    </div>   
+                                                    </div>
+                                                        <br>
+                                                        <div id="lunaItem">
+                                                          <div id="lunaItemPic"><img src="LunaAssets/items/Vampiric%20Symbol%20W.png"></div>
+                                                          <div id="lunaItemName"><h1>Vampiric Symbol (W)</h1> <hr></div>
+                                                          <div id="lunaItemDescription">
+                                                          <p>[Quest Item]</p>
+                                                       <p> A brilliantly shining jewel, embedded with lost tech magic that grants access to white castle doors within Le Fanu Castle. Long ago the kingdom of Lyria harbored many vampiric citizens, granting them protection in exchange for their magical knowledge.</p>
+                                                      </div>    
+                                                      </div>
+                                                          <br>
+                                                          <div id="lunaItem">
+                                                            <div id="lunaItemPic"><img src="LunaAssets/items/VHS%20Tape.png"></div>
+                                                            <div id="lunaItemName"><h1>VHS Tape</h1> <hr></div>
+                                                            <div id="lunaItemDescription">
+                                                            <p>[Secret Item]</p>
+                                                          <p>An old strange box. It's function was forgotten long ago.</p> 
+                                                          <p>How to obtain - Found on an altar behind a secret wall on the far west end of the sewer-like tunnel of the Temple of Silence</p>
+                                                          <p> Can be used on a TV found behind two fake walls in the catacombs of The Accursed Tomb. the area is just beyond one of the gates that can be broken via light dmg</p>    
+                                                          </div>
+                                                        
+                                                            </div>
+                                                            <br>
+                                                            <div id="lunaItem">
+                                                              <div id="lunaItemPic"><img src="LunaAssets/items/White VHS Tape.png"></div>
+                                                              <div id="lunaItemName"><h1>White VHS Tape</h1> <hr></div>
+                                                              <div id="lunaItemDescription">
+                                                              <p>[Secret Item]</p>
+                                                           <p> ...</p>
+                                                          </div>
+                                                              </div>
+
+
+                      </div>
+  `;
+                
+
+}
+
+
+</script>
+
+              
+              
+                                    
+
+</body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/Lunacid by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:02:37 GMT -->
+</html>

@@ -1,0 +1,86 @@
+body.free{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    color:rgb(255, 255, 255);
+  }
+
+  
+  #PFOGPageSelect{
+
+    text-align: center;
+display: inline-block;
+ 
+ width: 170px;
+
+  }
+
+  #PFOGPageSelect a{
+ font-size: 23px;
+  color: rgb(255, 204, 0)
+  }
+
+  #PFOGPageSelect p{
+    font-size: 23px;
+    
+     }
+
+
+     #PFOGPageSelect2{
+
+      text-align: center;
+  display: inline-block;
+    
+   width: 170px;
+  
+    }
+  
+    #PFOGPageSelect2 a{
+   font-size: 23px;
+    color: rgb(255, 204, 0)
+    }
+  
+    #PFOGPageSelect2 p{
+      font-size: 23px;
+      
+       }
+   
+
+
+ .free .textcontainerint{
+        padding:0px;
+        margin-left:15%;
+        Margin-right:15%;
+        border: 0;
+        background-color: rgb(97, 97, 97); 
+        display:block;
+}
+
+.free table{
+  border: black 5px  solid;
+  background-color: rgb(97, 97, 97); 
+  border-spacing: 0 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse:collapse;
+}
+
+.free td{
+  border: black 7px  solid;
+
+        margin-left:15%;
+        Margin-right:15%;
+        
+  background-color: rgb(97, 97, 97); 
+}
+
+
+.free td img{
+  border: rgb(97, 97, 97) 5px  solid;
+
+     
+}

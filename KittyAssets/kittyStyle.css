@@ -1,0 +1,95 @@
+   body.kitty {
+             transition-duration: 0.4s;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url("https://melvins-world.neocities.org/Tiles/kittytile2.png");
+    color:rgb(36, 36, 36);
+  }
+  
+   body.kitty iframe{
+            transition-duration: 0.4s;
+    border: ridge 8px rgb(54, 54, 54);
+  }
+  
+  .elliotbox {
+    transition-duration: 0.4s;
+          display: inline-block;
+         
+          text-align:center;
+          border: double thick rgb(87, 87, 87);
+          border-radius: 1%;
+          background-image: url("https://melvins-world.neocities.org/KittyAssets/paper.png");
+  
+          overflow:auto;
+          overflow-x: hidden; 
+  
+  
+        }
+
+        .elliotbox img{
+           transition-duration: 0.4s;
+          border: double  black;
+          border-radius: 10%;
+    border-width: 10px 10px 10px;
+          background-color: rgba(49, 36, 18, 0.9); 
+  
+          overflow:auto;
+          overflow-x: hidden; 
+  
+  
+        }
+
+        
+
+        .elliotcontainer{
+          color: white;
+          padding:0px;
+          margin-left:20%;
+          Margin-right:20%;
+          border: double thick rgb(131, 34, 55);
+          background-color: rgba(0, 0, 0, 0.85); 
+          border-radius: 10%;
+          display:block;
+        }
+        
+
+
+        .Elliotbigbox {
+          background-image: url("https://melvins-world.neocities.org/KittyAssets/paper.png");
+       
+          width:1300px;
+          display: inline-block;
+          border: ridge thick rgb(54, 54, 54);
+          
+        }
+        .Elliotbigbox tr td:nth-child(1) {
+         
+          width: 400px;
+          height:900px;
+       
+          }
+
+          .Elliotbigbox tr td:nth-child(2) {
+            
+            width: 700px;
+            
+            text-align: center;
+            }
+
+            .Elliotbigbox tr td:nth-child(3) {
+              
+              width: 400px;
+              height:900px;
+             
+              }
+      
+    
+        .ElliotbigboxSide {
+          height:900px;
+          width:200px;
+          display: inline-block;
+          border: ridge rgb(54, 54, 54) ;
+          
+        }

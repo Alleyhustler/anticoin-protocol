@@ -1,0 +1,205 @@
+   #hypno {
+
+          margin: auto;
+          border:  28px solid ; 
+          border-image: url(https://melvins-world.neocities.org/HypnoAssets/hypnoborder.png) 33% ;
+          background-color: rgb(20,20,20);
+     
+          overflow-y:hidden;
+          overflow-x:hidden;
+          text-align: center;
+          height: 750px;
+        color: white;
+          cursor: url('https://melvins-world.neocities.org/HypnoAssets/hypnomouse.png'), auto;
+          
+        }
+
+
+    
+  
+
+     
+
+        .hypnoscroll {
+
+          background-color: rgb(20,20,20);
+   
+          height: 644px;
+           overflow-y:auto;
+           
+           }
+
+
+        #hypnomain {
+ text-align: center;
+       margin-left:15%;
+        Margin-right:15%;
+        height: 3800px;
+        text-align:center;
+          
+    
+        position:relative;
+        background-image: url(https://melvins-world.neocities.org/HypnoAssets/Hypnotile.png); 
+
+        
+      
+        }
+
+
+        #hypno ::-webkit-scrollbar {
+          width: 20px;
+        }
+        
+        
+        #hypno ::-webkit-scrollbar-track {
+          background:   rgb(137, 74, 211);
+        
+        }
+        
+        /* Handle */
+        #hypno ::-webkit-scrollbar-thumb {
+          background: rgb(154, 199, 245);
+        }
+        
+        /* Handle on hover */
+        #hypno  ::-webkit-scrollbar-thumb:hover {
+          background: rgb(140, 180, 230);
+        }
+
+        #hypno  ::-webkit-scrollbar-button {
+          background-image: url("https://melvins-world.neocities.org/HypnoAssets/scrollarrow.png");
+
+        }
+
+        #hypnoMusic {
+          text-align: left;
+          position:fixed;
+          height: 66px;
+          width: 189px;
+          background-image: url('https://melvins-world.neocities.org/HypnoAssets/hypnomusic.png');
+          bottom: 10px;
+         
+        }
+        
+             #hypnohacker {
+        
+    
+          background-image: url('https://melvins-world.neocities.org/HypnoAssets/hacker-dark.png');
+        
+         
+        }
+        
+           #hypnoFreeze {
+          position:relative;
+    
+          background-image: url('https://melvins-world.neocities.org/HypnoAssets/fre3zer-mainbgchunknightcore.png');
+          height: 550px;
+       background-size: cover;
+         
+        }
+        
+
+        #hypnopizza {
+        
+  
+          background-image: url('https://melvins-world.neocities.org/HypnoAssets/firebrix2.png');
+        
+         
+        }
+            #motorSkellyL {
+          position:absolute;
+        
+left: 70px;
+top: 105px;
+  right: 0;
+
+        }
+
+        #motorSkellyR {
+          position:absolute;
+        
+left: 720px;
+top: 105px;
+  right: 0;
+
+        }
+#iceSpike1 {
+  position:absolute;
+left:-20px;
+      }
+
+      #iceSpike2 {
+        position:absolute;
+      right:10px;
+            }
+
+            #iceSpike3 {
+              position:absolute;
+              -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+            left:190px;
+                  }
+            
+                  #iceSpike4 {
+                    position:absolute;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                  right:170px;
+                        }
+
+            #chillIt1 {
+              position:absolute;
+            left:180px;
+           transform: rotate(-20deg);
+            top:200px;
+                  }
+            
+                  #chillIt2 {
+                    position:absolute;
+                  right:180px;
+                  top:200px;
+                  transform: rotate(20deg);
+                        }
+
+        #joeMan1L {
+          position:absolute;
+     left:320px;
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+
+
+        }
+        #joeMan1R {
+          position:absolute;
+         
+
+right:320px;
+
+        }
+
+        #joeSkate1 {
+      
+        
+          position:absolute;
+         transform: rotate(-1deg);
+top: 120px;
+left:55px;
+
+        }
+
+        #joeSkate2 {
+          position:absolute;
+         transform: rotate(-1deg);
+top: 120px;
+right:60px;
+
+        }
+
+        #vioBar {
+          text-align: left;
+          position:fixed;
+          height: 625px;
+          left: 30px;
+          
+          bottom: 5px;
+        }

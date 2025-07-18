@@ -1,0 +1,34 @@
+
+
+.code{
+      text-align: center;
+     
+      background-image: url("https://melvins-world.neocities.org/Tiles/cybertile2.png");
+      background-repeat: repeat;
+      color:white;
+     
+    }
+
+
+    .MontagContainer td{
+     padding: 50px;
+
+    }
+
+    .MontagContainer img{
+      transition-duration: 0.8s;
+      text-align: left;
+      border: ridge 10px rgb(80, 82, 201);
+   scale: 100%;
+    }
+    
+    .MontagContainer img:hover{
+      transition-duration: 0.4s;
+      scale: 130%;
+    }
+    
+     .MontagContainer video{
+      text-align: left;
+      border: ridge 10px rgb(80, 82, 201);
+
+    }

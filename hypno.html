@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/hypno by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:54 GMT -->
+<head><title>Gina's_World.hsm</title> 
+        <link  rel="stylesheet" href="style.css">
+         <link  rel="stylesheet" href="HypnoAssets/hypnoStyle.css">
+            <meta property="og:image" content="B%26B/gooper.gif" />
+      </head>
+    
+      
+      <div id="userpopup">
+     
+        
+ 
+    </div>
+     
+      
+  
+<body id="hypno" onclick="clickSound()"> 
+  <div id="HypnoClick"></div>
+ 
+ <script>
+function clickSound() {
+
+  document.getElementById("HypnoClick").innerHTML = '<audio id="audio2" src="click.mp3"></audio>';
+    var audio = document.getElementById("audio2");
+    audio.play();
+}
+
+ </script>
+
+
+  <div id="vioBar"> 
+  
+  </div>
+  <div id="hypnoMusic"> 
+    <iframe width="65" height="70" src="https://www.youtube-nocookie.com/embed/T5i-vz2AKmQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  
+  <map name="violationBar" id="vioBar">
+    <area shape="rect" coords="0,47,300,125" alt="exit" href="#" >
+    <area shape="rect" coords="0,130,300,200" alt="exit" href="#" >
+    <area shape="rect" coords="0,213,300,276" alt="exit" href="#" >
+    <area shape="rect" coords="0,296,300,352" alt="exit" href="#" >
+    <area shape="rect" coords="0,379,300,428" alt="exit" href="#" >
+    <area shape="rect" coords="0,462,300,504" alt="exit" href="#" onclick="vioBarToggle()">
+  </map>
+  <map name="hypnoUserInfo" id="userpopup">
+    <area shape="rect" coords="418,6,461,47" alt="exit" href="#" onclick="clearInfo()">
+  </map>
+  <map name="hypnoHeaderMap" id="hypnoHeader">
+    <area shape="rect" coords="1350,60,1380,95" alt="exit" href="#" onclick="popupUser()">
+    <area shape="rect" coords="170,60,220,95" alt="exit" href="#" onclick="vioBarToggle()">
+    <area shape="rect" coords="55,20,100,60" alt="exit" href="home.html">
+    
+  </map>
+  <map name="vioFlag">
+    <area shape="rect" coords="688,1,893,47" alt="exit" href="#" onclick="confirmFlag()">
+  </map>
+  <map name="flagPopUp">
+    <area shape="rect" coords="162,132,301,182" alt="exit" href="#" onclick="nukeIt() + clearInfo() + clearVioBar()">
+    <area shape="rect" coords="367,132,504,182" alt="exit" href="#" onclick="clearInfo()">
+  </map>
+
+
+<img src="HypnoAssets/hypnoheader2.png"  width="1390px" usemap="#hypnoHeaderMap" >
+<div id="hypno2">
+<div id="hypno1"> 
+<div class="hypnoscroll">
+  <div id="violationCount">
+  <img src="HypnoAssets/vio0.png" >  
+</div>
+  <img src="HypnoAssets/hypnouser1.png">  
+<div id="hypnomain">
+  <br>
+  <br>
+  <h1><div id="forceInline"><div id="vioImg1"><img src="HypnoAssets/hypnogun.gif" onclick="clickImg1()"></div> <img src="HypnoAssets/GinaLogo.png" > <div id="vioImg2"><img src="HypnoAssets/hypnogun.gif" onclick="clickImg2()"></div></div></h1> 
+  <p> OMG HAIII!!! :3. I'm Gina! Welcome to my world!</p>
+  <p> I really like Hypnospace, video gamez and 1337 HaXX1ng!</p>
+
+  
+   
+  <img id="motorSkellyR" src="HypnoAssets/MotorSkele.gif">
+
+  <img id="motorSkellyL" src="HypnoAssets/MotorSkeleflip.gif">
+  <img src="HypnoAssets/Hypnocrown.gif" height="40px"> 
+  <br>
+  <img src="HypnoAssets/GinaHypno2.jpg"> 
+
+  <p>Here's a picture of me!</p> 
+    <p>(Sorry for the bad quality; I only had a disposable camera BWL!)</p>
+    <br>
+    <br>
+    <img src="HypnoAssets/hypnoflame.gif" height="40px">
+    <br>
+    <br>
+    <img src="HypnoAssets/seepagelogo.png">
+    <br>
+    <img src="HypnoAssets/Hypnofire.gif" >  <img src="HypnoAssets/Hypnofire.gif" height="100px"> <img src="HypnoAssets/seepagebandpic.png">    <img src="HypnoAssets/Hypnofire.gif" height="100px"> <img src="HypnoAssets/Hypnofire.gif" > 
+    <p> Yeah, I still think Seepage is cool!  I hope they make another album someday!! 
+       <br>
+
+      <br>
+      <img src="HypnoAssets/hypnoflame.gif" height="40px">
+      <br>
+
+<h1> STOP!!! </h1>
+<div id="hypnopizza" onmouseover= "playsound(); refresh()"  onmouseout="playsound(); refresh()">
+<h2> PIZZA BREAK!!!</h2>
+<audio id="audio" src="HypnoAssets/PeetZa2MRM.wav"></audio>
+<br>
+<img src="HypnoAssets/Hypnopizza2.gif" > 
+<br>
+<img src="HypnoAssets/Hypnopizza.gif" >      <img src="HypnoAssets/Hypnoalien.gif" >      <img src="HypnoAssets/Hypnopizza.gif" >
+<br>
+<img src="HypnoAssets/Hypnopizza2.gif" >   
+</div>
+    <br>
+    <br>  
+
+      <script>
+        
+
+        var toggle = false;
+
+ 
+function playsound(){
+
+  
+  var audio = document.getElementById("audio");
+
+  if (toggle == false) {
+toggle = true;
+audio.play();
+} else {
+  toggle = false;
+  audio.pause();
+}
+console.log(toggle);
+
+}
+
+        </script>
+
+
+
+ 
+ <div id="hypnohacker">  
+ <br> 
+    <br>
+    <div id="forceInline"> <img src="HypnoAssets/Hypnocd.gif" > <p>>INSERTING HACKING DISC MK 3</p> <img src="HypnoAssets/Hypnocd.gif" > </div>
+    <br>
+    <br>
+    <img src="HypnoAssets/Hypnohack1.gif">  
+    <br>
+    <div id="forceInline"> <img src="HypnoAssets/Hypnocd.gif" > <p>>INSERTING HACKING DISC MK 3</p> <img src="HypnoAssets/Hypnocd.gif" > </div>
+    <br>
+    <br> 
+    <br>
+    <img src="HypnoAssets/HypnoHack2.gif">   <img src="HypnoAssets/HypnoHack3.gif">
+    
+<br>
+      <p> I'M IN</p> 
+      
+  </div>
+<br>
+
+  <div id="hypnoFreeze">  
+    <img id="iceSpike1" src="HypnoAssets/icespike.gif"> <img id="iceSpike3" src="HypnoAssets/icespike.gif"> <img id="iceSpike2" src="HypnoAssets/icespike.gif"> <img id="iceSpike4" src="HypnoAssets/icespike.gif">
+    <br> 
+       <br>
+       <br>
+        <img src="HypnoAssets/coolpunk.gif" >
+       <br>
+       <img id="chillIt1" src="HypnoAssets/graysbottle1.png" height="100px">  <img id="chillIt1" src="HypnoAssets/chillit.gif" height="100px"> <img id="chillIt2" src="HypnoAssets/graysbottle1.png" height="100px"> <img id="chillIt2" src="HypnoAssets/chillit.gif" height="100px">   
+          <img id="joeMan1L" src="HypnoAssets/joeman1.png"> <iframe width="150" height="150" src="https://www.youtube-nocookie.com/embed/H9r1wfSE0A8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <img id="joeMan1R" src="HypnoAssets/joeman1.png"> 
+       <br>
+       <img id="joeSkate1" src="HypnoAssets/joeman3.png"> <img id="joeSkate2" src="HypnoAssets/joeman3.png">
+       <br>
+       <img src="HypnoAssets/peng.gif">  <img src="HypnoAssets/peng.gif"> 
+
+<script>
+ var direction = 1;
+var joeXPosition1 = 0;
+setInterval(joeSway, 15) ;
+
+
+function joeSway() {
+
+
+
+if (joeXPosition1 == 30) {
+direction = 0;
+
+}
+
+if (joeXPosition1 == -30) {
+direction = 1;
+
+}
+if (direction == 1) {
+joeXPosition1 ++;
+
+}
+if (direction == 0) {
+joeXPosition1 --;
+
+}
+
+  document.getElementById('joeSkate1').style.transform= ' scaleX(-1) rotate('+joeXPosition1+'deg)';
+  document.getElementById('joeSkate2').style.transform= 'rotate('+joeXPosition1+'deg)';
+  console.log(joeXPosition1)
+}
+</script>
+       
+   <br>
+        
+         
+     </div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+    <img src="HypnoAssets/MotorSkeleflip.gif" height="100px"> <img src="HypnoAssets/hypnoflame.gif" height="37px"> <img src="HypnoAssets/MotorSkele.gif" height="100px">
+
+
+    <p> I heard rumors that Hypnospace is being discontuined because of all that controversy. I think Merchantsoft has something new in the works. I don't know about you, but I'd totally sign up for a beta!</p>
+<br>
+
+
+
+<div id="forceInline"><div id="vioImg3"><img src="HypnoAssets/gooper1.gif" onclick="clickImg3()" > </div> <img src="HypnoAssets/dreamsettler.png" height="200px"> <div id="vioImg4"><img src="HypnoAssets/gooper1.gif" onclick="clickImg4()" ></div>  </div>
+<br>
+<img src="HypnoAssets/hypnoflame.gif" height="40px">
+<br>
+<br>
+
+
+<br>
+<img src="HypnoAssets/HSNCButton.png" width="150px"> <img src="HypnoAssets/Gamerbutton.png" width="150px"> <img src="HypnoAssets/techbutton.png" width="150px"> <div id="vioImg5"><img src="HypnoAssets/Gooperbutton.png" onclick="clickImg5()" width="150px"> </div>
+<br>
+<hr>
+<h2> *Credit to Merchantsoft and Hypnospace Outlaw for the assets!* </h2> <a href="https://www.hypnospace.net/"> <img src="HypnoAssets/Merch.png"> </a>
+<br>
+
+<h2> Big thank you to Monoculus Rex Murum for creating the Pizza remix! Check them out below:</h2>
+<a href="https://monoculusrex.myportfolio.com/"><img src="B%26B/MRMBanner.gif"></a>
+
+<br>
+<br>
+<br>
+
+
+</div>
+</div>
+</div>
+
+
+<script>
+var numOfVio = 0;
+var vioMode = false;
+
+function checkVioCount(){
+if (numOfVio == 0) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio0.png">' ; 
+
+} else if (numOfVio == 1) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio1.png">' ; 
+
+} else if (numOfVio == 2) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio2.png">' ; 
+
+} else if (numOfVio == 3) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio3.png">' ; 
+
+} else if (numOfVio == 4) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio4.png">' ; 
+
+} else if (numOfVio == 5) {
+  document.getElementById("violationCount").innerHTML = '<img src="HypnoAssets/vio5.png" usemap="#vioFlag">' ; 
+
+} 
+}
+
+
+function vioBarToggle(){
+vioMode = !vioMode;
+
+if (vioMode == true) {
+  document.body.style.cursor = "url('HypnoAssets/viohammer.png'),auto";  
+document.getElementById("vioBar").innerHTML = '<div id="vioSelector"> <img src="HypnoAssets/viobar.png" usemap="#violationBar"> </div>' ; 
+
+}else if (vioMode == false) {
+document.body.style.cursor = "url('HypnoAssets/hypnomouse.png'),auto";  
+  const element = document.getElementById('vioSelector');
+          element.remove();
+}
+
+
+}
+
+function clearVioBar(){
+vioMode = false;
+document.body.style.cursor = "url('HypnoAssets/hypnomouse.png'),auto";  
+  const element = document.getElementById('vioSelector');
+          element.remove();
+}
+
+
+   function popupUser() {
+
+document.getElementById("userpopup").innerHTML = '<div id="mydiv">' + ' <div id="mydivheader"><img src="HypnoAssets/hypnouserinfo.png" usemap="#hypnoUserInfo"></div>' + '</div>' ; 
+
+
+// Draggable element code found at https://www.w3schools.com/howto/howto_js_draggable.asp Still not quite sure how it works:
+
+  dragElement(document.getElementById("mydiv"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  
+   
+}
+   }
+
+function popupVioSubmit() {
+
+document.getElementById("userpopup").innerHTML = '<div id="mydiv">' + ' <div id="mydivheader"><img src="HypnoAssets/hypnouserinfo.png" usemap="#hypnoUserInfo"></div>' + '</div>' ; 
+
+
+
+
+  dragElement(document.getElementById("mydiv"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  
+   
+}
+
+}
+
+  function clearInfo() {
+          
+          const element = document.getElementById('mydiv');
+          element.remove();
+        }
+
+
+
+
+        function clickImg1() {
+          if (vioMode== true) {
+            numOfVio += 1;
+            document.getElementById("vioImg1").innerHTML = '<img src="HypnoAssets/vioremove.png" height="60px">' ; 
+
+          }
+          checkVioCount();
+        }
+        
+        function clickImg2() {
+          if (vioMode== true) {
+            numOfVio += 1;
+            document.getElementById("vioImg2").innerHTML = '<img src="HypnoAssets/vioremove.png" height="60px">' ; 
+
+          }
+          checkVioCount();
+        }
+
+        function clickImg3() {
+          if (vioMode== true) {
+            numOfVio += 1;
+            document.getElementById("vioImg3").innerHTML = '<img src="HypnoAssets/vioremove.png">' ; 
+
+          }
+          checkVioCount();
+        }
+
+
+        function clickImg4() {
+          if (vioMode== true) {
+            numOfVio += 1;
+            document.getElementById("vioImg4").innerHTML = '<img src="HypnoAssets/vioremove.png">' ; 
+
+          }
+          checkVioCount();
+        }
+
+
+        function clickImg5() {
+          if (vioMode== true) {
+            numOfVio += 1;
+            document.getElementById("vioImg5").innerHTML = '<img src="HypnoAssets/vioremove.png">' ; 
+
+          }
+          checkVioCount();
+        }
+
+        function confirmFlag() {
+          document.getElementById("userpopup").innerHTML = '<div id="mydiv">' + ' <div id="mydivheader"><img src="HypnoAssets/vioflagconf.png" usemap="#flagPopUp"></div>' + '</div>' ; 
+
+
+// Draggable element code found at https://www.w3schools.com/howto/howto_js_draggable.asp Still not quite sure how it works:
+
+  dragElement(document.getElementById("mydiv"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  
+   
+}
+
+        }
+
+
+        function nukeIt() {
+          numOfVio == 0;
+
+          const element = document.getElementById('hypno1');
+          element.remove();
+
+    
+
+    
+
+          document.getElementById("hypno2").innerHTML = '<h1> YOU HAVE NOT HEARD THE LAST OF ME, ENFORCER. I WILL RETURN! </h1> <p>*More content soon*</p>' ; 
+
+
+        }
+</script>
+</body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/hypno by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:02:09 GMT -->
+</html>

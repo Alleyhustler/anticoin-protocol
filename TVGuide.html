@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/TVGuide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:04:21 GMT -->
+<head><title>Gina's Code Korner!</title> 
+        <link  rel="stylesheet" href="style.css">
+        <link  rel="stylesheet" href="GCK_Assets/GCKStyle.css">
+        
+        
+      </head>
+  
+      <body class="guide" onload="spawnGuideTable()"> 
+
+        <div id="guideChannel"></div>
+        <button onclick="window.opener.randomizeChannels()">Randomize videos</button>
+        <button onclick="window.opener.channelUp()">+1</button>
+        <button onclick="window.opener.channelDown()">-1</button>
+     
+      <br>
+     <hr>
+    <div id="tvGuideTable"> </div>
+    
+       <script>   
+         
+         function spawnGuideTable() {
+           
+         document.getElementById("tvGuideTable").innerHTML = `
+          <table>
+            <tr>
+            
+              <th> </th>
+              <th>#</th>
+              <th>Name</th>
+              
+            
+            </tr>
+            <tr>
+            
+              <td><a href="#"><img src="winampplay.png" onclick="window.opener.channel = 0; window.opener.channelTest()"></a></td>
+              <td>0</td>
+              <td></td>
+              
+            
+              </tr>
+            <tr>
+                
+              <td><a href="#"><img src="winampplay.png" onclick="window.opener.channel = 1; window.opener.channelTest()"></a></td>
+                <td>1</td>
+                <td id="ch1Title"></td>
+              
+            
+              </tr>
+            <tr>
+                
+              <td><a href="#"><img src="winampplay.png" onclick="window.opener.channel = 2; window.opener.channelTest()"></a></td>
+                <td>2</td>
+              <td id="ch2Title"></td>
+              
+             
+              </tr>
+            <tr>
+                
+              <td><a href="#"><img src="winampplay.png" onclick="window.opener.channel = 3; window.opener.channelTest()"></a></td>
+                <td>3</td>
+              <td id="ch3Title"></td>
+          
+            
+            </tr>
+            
+          
+            <tr>
+                
+              <td><a href="#"><img src="winampplay.png" onclick="window.opener.channel = 4; window.opener.channelTest()"></a></td>
+                <td>4</td>
+                <td id="ch4Title"></td>
+            
+            
+            </tr>
+
+                  </table> 
+                  
+                 
+                    
+                    `;
+                    window.opener.guideUpdate();
+                    }
+         
+     
+    
+    </script>
+   
+        
+         
+         
+         
+         
+         
+       
+      </body>

@@ -1,0 +1,60 @@
+body.mabi{
+  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+  
+    background-image: url("https://melvins-world.neocities.org/MabiAssets/mabi.png"), url("https://melvins-world.neocities.org/MabiAssets/bgtest.png");
+    background-repeat: no-repeat, repeat-y;
+    background-size: contain, contain;
+   
+    color:rgb(255, 208, 249);
+  }
+
+    body.mabi .textcontainerint{
+     
+      padding:7px;
+          background-color: rgba(36, 28, 28, 0.8); 
+          display:block;
+          float:center;
+          text-align: center;
+  }
+
+  body.mabi .textcontainerint p{
+     transition-duration: 0.4s;
+    padding:7px;
+        background-color: rgba(53, 33, 37, 0.2); 
+        display:block;
+        float:center;
+        text-align: center;
+}
+  
+  
+  body.mabi .textcontainerint img{
+
+
+        border: ridge  rgb(209, 173, 181);
+        border-width: 4px 5px 4px;
+border-radius: 2%;
+}
+
+#mabiChar{
+  display: inline-block;
+
+
+position: relative;
+ 
+  
+ 
+  margin-left: 1.7%;
+  margin-top: 2.5%;
+  background-color: rgba(209, 173, 181, 0.6);
+
+}
+
+#mabiChar img{
+position: relative;
+  background-color: rgba(209, 173, 181, 0.3);
+
+}

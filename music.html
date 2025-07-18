@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/music by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:00:59 GMT -->
+<head><title>Melvin's World!</title>
+        <link  rel="stylesheet" href="style.css">
+      </head>
+  
+      <body class="base"> 
+        
+        <h1>Melvin's World!</h1>
+         
+            <br>
+           
+           
+              <div class="navbar1">
+        <ul>
+          <li><a href="home.html"> <img src="NavButtons/HomeB.png"></a></li>
+          <li><a href="about.html"> <img src="NavButtons/AboutB.png"></a></li>
+          <li><a href="news.html"> <img src="NavButtons/NewsB.png"></a></li>
+          <li><a href="directory.html"> <img src="NavButtons/DirectoryB.png"></a></li>
+          <li><a href="index.html"><img src="NavButtons/EntranceB.png"></a></li>
+        </ul>
+        <br>
+      </div>
+
+
+          <br>
+
+     <br>
+         
+          
+      <script>
+      var musicselect;
+
+      var musicVar = [
+         {
+                
+            link:  "https://www.youtube-nocookie.com/embed/t1grew31ah4?si=hbyydN3UUqNOufYB",
+                title: "Millennium Escalator",
+                artist: "Machine Girl",
+                date: "3/23/25",
+              },
+            
+            {
+                
+            link:  "https://www.youtube-nocookie.com/embed/K3u5h9cPTBw?si=sdatJR8YjaG6CkxQ",
+                title: "Kiri",
+                artist: "MONORAL",
+                date: "12/8/24",
+              },
+             {
+                
+            link:  "https://www.youtube-nocookie.com/embed/F5ixNXa6Nuc?si=tK2UJnxwTAkK-Tmg",
+                title: "Alien",
+                artist: "Lebanon Hanover",
+                date: "6/9/24",
+              },
+          {
+                
+            link:  "https://www.youtube-nocookie.com/embed/na-g7yJIJPg?si=KYm9LmTp6O-IrVcx",
+                title: "Dont Call (LIVE) (Ft. Brigitte Naggar)",
+                artist: "Dabu",
+                date: "4/8/24",
+              },
+         {
+                
+            link:  "https://www.youtube-nocookie.com/embed/IartBoBdpwo?si=wcQz4b77wHVGpSg9",
+                title: "Haunted",
+                artist: "Laura Les",
+                date: "3/3/24",
+              },
+        {
+                
+            link:  "https://www.youtube-nocookie.com/embed/AN1RJF55NXI?si=LJXHzBd19EhFy2AJ",
+                title: "Never Fade Away",
+                artist: "Refused",
+                date: "10/13/23",
+              },
+           {
+                
+            link:  "https://www.youtube-nocookie.com/embed/GKlAHqsiG1w",
+                title: "Die Toteninsel (Emptiness)",
+                artist: "1000 Eyes",
+                date: "1/20/23",
+              },
+          
+           {
+                
+            link:  "https://www.youtube-nocookie.com/embed/WLmb_541lBo",
+                title: "Glory",
+                artist: "Heaven Pierce Her",
+                date: "1/3/23",
+              },
+          {
+                
+            link:  "https://www.youtube-nocookie.com/embed/bvas-wzxDYI",
+                title: "I'm Moovin' Nis",
+                artist: "Scoutellite/SYRSA",
+                date: "12/12/22",
+              },
+              {
+                
+            link:  "https://www.youtube-nocookie.com/embed/RiS1xQoQvKE",
+                title: "Quiet's Theme",
+                artist: "Akihiro Honda",
+                date: "10/13/22",
+              },
+          
+          {
+                
+            link:  "https://www.youtube-nocookie.com/embed/XF3xCifQ290",
+                title: "Waiting For You",
+                artist: "Akira Yamaoka",
+                date: "9/5/22",
+              },
+          {
+                
+            link:  "https://www.youtube-nocookie.com/embed/aDlKbvoHDNw",
+                title: "Moonlight Shadow",
+                artist: "E-rotic",
+                date: "8/15/22",
+              },
+           {
+                
+            link:  "https://www.youtube-nocookie.com/embed/IRvGZffXhfk",
+                title: "Around the World",
+                artist: "ATC",
+                date: "6/27/22",
+              },
+              
+              {
+                 
+                link:  "https://www.youtube-nocookie.com/embed/wshI5nu1q6E",
+                title: "Forever",
+                artist: "Siah",
+                date: "5/28/22",
+              },
+              {
+                 
+                link:  "https://www.youtube-nocookie.com/embed/sJY4Z3fDJjI",
+                title: "Industrial Blue",
+                artist: "Jerry Lehr",
+                date: "5/14/22",
+              },
+    
+            ];
+
+            function vid0() {
+              musicselect = 0;
+            }
+
+            function vid1() {
+              musicselect = 1;
+            }
+
+            function vid2() {
+              musicselect = 2;
+            }
+            function vid3() {
+              musicselect = 3;
+            }
+            function vid4() {
+              musicselect = 4;
+            }
+            function vid5() {
+              musicselect = 5;
+            }
+            function vid6() {
+              musicselect = 6;
+            }function vid7() {
+              musicselect = 7;
+            }function vid8() {
+              musicselect = 8;
+            }function vid9() {
+              musicselect = 9;
+            }function vid10() {
+              musicselect = 10;
+            }function vid11() {
+              musicselect = 11;
+            }function vid12() {
+              musicselect = 12;
+            }function vid13() {
+              musicselect = 13;
+            }function vid14() {
+              musicselect = 14;
+            }
+            
+           
+            
+      function playVid() {
+            
+        if (musicselect == 0) {
+          music = musicVar[0];
+           
+           
+        } else if (musicselect == 1){
+          music = musicVar[1];
+
+        } else if (musicselect == 2){
+          music = musicVar[2];
+            
+          } else if (musicselect == 3){
+            music = musicVar[3];
+
+          } else if (musicselect == 4){
+            music = musicVar[4];
+          } else if (musicselect == 5){
+            music = musicVar[5];
+
+          }else if (musicselect == 6){
+            music = musicVar[6];
+
+          }else if (musicselect == 7){
+            music = musicVar[7];
+
+          }else if (musicselect == 8){
+            music = musicVar[8];
+
+          }else if (musicselect == 9){
+            music = musicVar[9];
+
+          }else if (musicselect == 10){
+            music = musicVar[10];
+
+          }else if (musicselect == 11){
+            music = musicVar[11];
+
+          }else if (musicselect == 12){
+            music = musicVar[12];
+          }else if (musicselect == 13){
+            music = musicVar[13];
+          }else if (musicselect == 14){
+            music = musicVar[14];
+          }
+          
+          document.getElementById("winampImg").innerHTML = '<iframe width="200" height="190" src="' + music.link + '"' + 'title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+          document.getElementById("winampMarquee").innerHTML =  music.artist + " - " + music.title;
+          musicselect = 0;
+        };
+        
+      </script>   
+     
+     <div class="winampHeader">
+      <p> <img src="winampborder.png"> What's Been on Repeat?  <img src="winampborder.png"> </p> 
+      </div>
+      
+      <div class="winampcontainer">  
+        <div id="winampPrev"> 
+          <p>Previous entries</p>
+      <table>
+<tr>
+  <th>Name</th>
+  <th>Artist</th>
+  <th>Last featured on</th>
+</tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid0() + playVid()"></a>Millennium Escalator</td>
+  <td>Machine Girl</td>
+  <td>3/23/25</td>
+  </tr>
+<tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid1() + playVid()"></a>Kiri</td>
+  <td>MONORAL</td>
+  <td>12/8/24</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid2() + playVid()"></a>Alien</td>
+  <td>Lebanon Hanover</td>
+  <td>6/9/24</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid3() + playVid()"></a>Dont Call (LIVE) (Ft. Brigitte Naggar)</td>
+  <td>Dabu</td>
+  <td>4/8/24</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid4() + playVid()"></a>Haunted</td>
+  <td>Laura Les</td>
+  <td>3/3/24</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid5() + playVid()"></a>Never Fade Away</td>
+  <td>Refused</td>
+  <td>10/13/23</td>
+  </tr>
+<tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid6() + playVid()"></a> Die Toteninsel (Emptiness)</td>
+  <td>1000 Eyes</td>
+  <td>1/20/23</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid7() + playVid()"></a> Glory</td>
+  <td>Heaven Pierce Her</td>
+  <td>1/3/23</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid8() + playVid()"></a> I'm Moovin' Nis</td>
+  <td>Scoutellite/SYRSA</td>
+  <td>12/12/22</td>
+  </tr>
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid9() + playVid()"></a> Quiet's Theme</td>
+  <td>Akihiro Honda</td>
+  <td>10/13/22</td>
+  </tr>
+
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid10() + playVid()"></a> Waiting For You</td>
+  <td>Akira Yamaoka</td>
+  <td>9/5/22</td>
+  </tr>
+
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid11() + playVid()"></a> Moonlight Shadow</td>
+  <td>E-rotic</td>
+  <td>8/15/22</td>
+  </tr>
+  
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid12() + playVid()"></a> Around the World</td>
+  <td>ATC</td>
+  <td>6/27/22</td>
+  </tr>
+  
+<tr>
+  <td><a href="#"><img src="winampplay.png" onclick="vid13() + playVid()"></a> Forever</td>
+  <td>Siah</td>
+  <td>5/28/22</td>
+  </tr>
+  
+<tr>
+<td><a href="#"><img src="winampplay.png" onclick="vid14() + playVid()"></a> Industrial Blue</td>
+<td>Jerry Lehr</td>
+<td>5/14/22</td>
+</tr>
+
+
+      </table>    
+      
+        
+        </div>
+        <div id="winampImg"> <iframe width="200" height="190" src="https://www.youtube-nocookie.com/embed/t1grew31ah4?si=hbyydN3UUqNOufYB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+              
+        <marquee id="winampMarquee" scrollamount="5">Machine Girl - Millennium Escalator </marquee>
+                 
+                  
+          
+            </div>  
+            
+            <br>
+        
+            <br>
+            
+         <br>
+         <div class="list"> 
+            <div class="textcontainer">
+            <h2> Music I like</h2>
+            </div>
+            <br>  
+             <h2> *This page is mostly outdated* </h2>
+            
+    <br>
+            <div class="scrollbox2">
+            <table>
+            <tr>
+                <td><img src="MusicGameAssets/blink.jpg" height="200px" width="200px"> </td>
+                <td>
+                    
+                        <h1>Blink-182</h1> 
+                        <h3>Favorite Tracks: I Miss You, Always, Feeling This, Ghost on The Dancefloor, On Some Emo Shit, Dammit, First Date   </h3>
+                  
+                  
+                        <p>Classic Pop-Punk! If you're ever singing tom's parts you HAVE to say it like he would! it's the LAW!</p>
+
+            
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <td><img src="MusicGameAssets/MCR.jpg" height="200px" width="200px"> </td>
+                <td>
+                  
+                        <h1>My Chemical Romance</h1>
+                        <h3>Favorite Tracks: Helena, Cancer, Cemetery Drive, I'm not Okay (I Promise) </h3>
+                  
+               
+                        <p>If you're Emo, you already know what's up. That part in Helena that starts with "Can you hear me?" is like *MORPHINE ADMINISTERD*  </p>
+
+            </tr>
+            
+            <tr>
+              <td><img src="MusicGameAssets/Chiasm.jpg" height="200px" width="200px"> </td>
+              <td>
+                
+                      <h1>Chiasm <a href="https://chiasm.bandcamp.com/music">Bandcamp</a></h1>
+                      <h3>Favorite Tracks: Space Lights, Isolated, Mice on a Wheel, Are You Okay? (original mix) </h3>
+                
+             
+                      <p>If you're a Goth gamer, you might recognize Chiasm from Vampire The Masquerade Bloodlines, the song Isolated is a classic! Her later work takes on a new direction, but is absolutely packed with emotion. Definetly check her out!</p>
+
+          </tr>
+          
+          <tr>
+            <td><img src="MusicGameAssets/chester.jpg" height="200px" width="200px"> </td>
+            <td>
+              
+                    <h1>Linkin Park </h1>
+                    <h3>Favorite Tracks: One More Light, Crawling, Numb, In the End, Breaking the Habit, Somewhere I Belong  </h3>
+              
+           
+                    <p>When I think about Linkin Park, all that comes to mind is Chester. His ability to balance between yelling and softly singing is unmatched. I don't believe in angels, but Chester might have been one. Rest well, thank you for being a light in the darkness for millions.</p>
+
+        </tr>
+
+
+          <tr>
+            <td><img src="MusicGameAssets/renard.png" height="200px" width="200px"> </td>
+            <td>
+              
+                    <h1>Renard (An Emma Essex alias) <a href="https://halleylabs.com/">Bandcamp</a></h1>
+                    <h3>Favorite Tracks: Intensive Care Unit, Forcing You Into My Life, In Stereo (rmx), The Dark, System Failure, Scrape The Heavens   </h3>
+              
+           
+
+<p> Renard is probably the catalyst for my musical tastes. It all started with Intensive Care Unit, you've probably heard it somewhere, every YTPMV back in the day used it as a BGM. Ever since then I've listened to just about all the Lapfox era aliases, but Renard has always stuck with me the most. </p>
+        </tr>
+
+        
+
+      <tr>
+        <td> <img src="MusicGameAssets/akira.png" height="200px" width="200px"> </td>
+        <td>
+          
+                <h1> Akira Yamaoka </h1>
+                <h3>Favorite Tracks: Promise, You're Not Here, The Day of Night, I Want Love, Waiting For You </h3>
+          
+       
+
+<p>   I adore the atmosphere of Silent Hill, and the music is in a league of its own. Yamaoka has a great range, from heavy industrial noise, soothing ambience, to alt rock, he does it all perfectly. Shoutout to Mary Elizabeth McGlynn for her awesome vocal work! </p>
+    </tr>
+
+    <tr>
+      <td> <img src="MusicGameAssets/Hirasawa.jpg" height="200px" width="200px"> </td>
+      <td>
+        
+              <h1> Susumu Hirasawa </h1>
+              <h3>Favorite Tracks: Gattsu, The Girl In Byakkoya, Forces, Big Brother   </h3>
+        
+     
+
+<p> I'm not sure what to clasify Hirasawa's music under, but it really is something worth listening to! I absolutely adore the vocal work, there's always this ethereal feel to it, even when it's distorted. </p>
+  </tr>
+
+
+
+
+            
+    
+            </table>
+            
+         
+            
+          </div>  
+            </div>
+       
+<br>
+
+</body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/music by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:03 GMT -->
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    
+<!-- Mirrored from melvins-world.neocities.org/SimuPass by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:47 GMT -->
+<head><title>Melvin's World!</title>
+        <link  rel="stylesheet" href="style.css">
+        <link  rel="stylesheet" href="451Assets/451Style.css">
+        <link  rel="stylesheet" href="MatrixAssets/matrixStyle.css">
+      </head>
+  
+      <body class="Morpheus"> 
+       
+<a href="home.html"> <img src="back.gif" width=70px> </a>
+<br>
+<img src="451Assets/keypadL.gif">
+           <script>
+        function passWord2() {
+          //Looking at the code to find the password? How unprofessional! Manderley will be hearing about this! Well.. I guess if you had to go through all this trouble to find the code, you can also check out my other hidden page! https://melvins-world.neocities.org/SECRET.html  //
+         
+            var pass ="0451";
+          var attempt = 0;
+           var attemptsRemaining = 3 - attempt;
+          var attemptsRemainingTxt = 'Attempts Remaning: ' + attemptsRemaining;
+         var pass1 = prompt('Theres no ICE Breaker for this one | ' + attemptsRemainingTxt, '');
+           
+           
+             while (attempt <= 3) {
+              
+             
+            
+                if (pass1 == pass) {
+                    alert('Access Granted. Welcome agent', '');
+                     window.location.href='The_0451_Conspiracy.html';
+                    break;
+                } else if (pass1 != pass && attempt < 3) {
+               
+              attempt+=1;
+              attemptsRemaining = 3 - attempt;
+               attemptsRemainingTxt = 'Attempts Remaning: ' + attemptsRemaining;
+              pass1 = prompt('Access Denied | ' + attemptsRemainingTxt, '');
+            
+
+              } 
+
+               if  (pass1 != pass && attempt == 3) {
+                alert('*Failure* Booting from system...', '');
+            window.location.href='home.html';
+            break;
+                }
+           
+              
+              }
+             
+            
+        }
+        
+        </script>
+      
+       <br>
+        <input type="button" value="Enter Passcode" onClick="passWord2()">
+        
+
+
+
+
+
+
+
+
+
+      </body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/SimuPass by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:48 GMT -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

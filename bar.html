@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+    
+<!-- Mirrored from melvins-world.neocities.org/bar by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:26 GMT -->
+<head><title>The Bar</title> 
+        <link  rel="stylesheet" href="style.css">
+        <link  rel="stylesheet" href="BarAssets/barStyle.css">
+      </head>
+  
+      <body class="Bar"> 
+
+    
+        <map name="drinkSelect">
+
+         
+           <area shape="rect" coords="16,168,31,200" href='#' onclick="randomDrink(); selectDrink()" alt="random" title="Randomizer" >
+           <area shape="rect" coords="36,114,53,201" href='#' onclick="drink1(); selectDrink()" alt="Vodka" title="Cossacks Vodka">
+           <area shape="rect" coords="56,143,80,200" href='#' onclick="drink2(); selectDrink()" alt="[BIG SHOT]" title="[BIG SHOT] SODA">
+           <area shape="rect" coords="81,157,109,201" href='#' onclick="drink3(); selectDrink()" alt="BONK!" title="BONK! ATOMIC PUNCH">
+           <area shape="rect" coords="110,168,127,200" href='#' onclick="drink4(); selectDrink()" alt="Whiskey" title="Whiskey">
+           <area shape="rect" coords="129,159,154,201" href='#' onclick="drink5(); selectDrink()" alt="Pillz" title="Pillz (video is kind of loud)">
+           <area shape="rect" coords="157,167,178,201" href='#'  onclick="drink6(); selectDrink()" alt="Health Potion?" title="Health Potion?">
+           <area shape="rect" coords="183,167,202,200" href='#'   onclick="drink7(); selectDrink()" alt="Mana Potion" title="Mana Potion">
+           <area shape="rect" coords="205,176,226,201" href='#' onclick="drink8(); selectDrink()" alt="Ryncol" title="Ryncol">
+           <area shape="rect" coords="11,247,32,272" href='#' onclick="drink9(); selectDrink()"  alt="Apple" title="Apple">
+           <area shape="rect" coords="32,243,56,272" href='#' onclick="drink10(); selectDrink()" alt="Orange" title="Orange">
+           <area shape="rect" coords="61,227,77,272" href='#' onclick="drink11(); selectDrink()" alt="QuanTum" title="QuanTum">
+           <area shape="rect" coords="80,253,127,272" href='#' onclick="drink12(); selectDrink()" alt="Sandvich" title="Sandvich">
+           <area shape="rect" coords="127,230,140,260" href='#' onclick="drink13(); selectDrink()" alt="Java" title="Java">
+           <area shape="rect" coords="142,231,165,260" href='#' onclick="drink15(); selectDrink()" alt="Banang" title="Banang">
+          </map>
+        
+
+        <div class="BarJuke">
+        
+            <script>
+              var buttonselect = 0;
+              var discAtEdge;
+              var rotateTimer;
+        var rotateDeg = 0;
+              var videos = [
+                      {
+                         
+                        vLink:  "https://www.youtube-nocookie.com/embed/Nr9ctdMu2Rg?autoplay=1",
+                        vTitle:"The Gates of Hell",
+                      },
+                      {
+                         
+                        vLink: "https://www.youtube-nocookie.com/embed/pVe0I-9W0Uc?autoplay=1",
+                        vTitle:"Thomas MacLaine",
+                      },
+                  {
+                        
+                    vLink:  "https://www.youtube-nocookie.com/embed/UqgAtnS0_bc?autoplay=1",
+                    vTitle:"Gurza Dreaming",
+                      },
+                  {
+                          
+                    vLink:  "https://www.youtube-nocookie.com/embed/uoUCyrg5Syo?autoplay=1",
+                    vTitle:"Isolated",
+                      },
+                  {
+                         
+                          vLink: "https://www.youtube-nocookie.com/embed/RCak5hsyskU?autoplay=1",
+                          vTitle:"Mysterious Guest",
+                      },
+                    ];
+
+                    function randomVid() {
+                      buttonselect = 6;
+                    }
+
+                    function vid1() {
+                      buttonselect = 1;
+                    }
+
+                    function vid2() {
+                      buttonselect = 2;
+                    }
+                    function vid3() {
+                      buttonselect = 3;
+                    }
+                    function vid4() {
+                      buttonselect = 4;
+                    }
+                    function vid5() {
+                      buttonselect = 5;
+                     
+                    }
+
+                    
+              function playVid() {
+                document.getElementById('disc1').style= 'reset()';
+                document.getElementById('disc2').style= 'reset()';
+                document.getElementById('disc3').style= 'reset()';
+                document.getElementById('disc4').style= 'reset()';
+                document.getElementById('disc5').style= 'reset()';
+              
+                clearInterval(rotateTimer);    
+
+                if (buttonselect == 6) {
+                
+                  video = videos[Math.floor(Math.random() * videos.length)];
+                   
+                    console.log(video);
+                } else if (buttonselect == 1){
+               
+                  rotateTimer = setInterval(discRotate, 10);
+                  discRotate();
+                  video = videos[0];
+
+                } else if (buttonselect == 2){
+                 
+                  discAtEdge == false;
+                  rotateTimer = setInterval(discRotate, 10);
+                  discRotate();
+                  video = videos[1];
+                    
+                  } else if (buttonselect == 3){
+                  
+                    discAtEdge == false;
+                    rotateTimer = setInterval(discRotate, 10);
+                  discRotate();
+                    video = videos[2];
+
+                  } else if (buttonselect == 4){
+                    discAtEdge == false;
+                    rotateTimer = setInterval(discRotate, 10);
+                  discRotate();
+                    video = videos[3];
+                  } else if (buttonselect == 5){
+                   
+                    rotateTimer = setInterval(discRotate, 10);
+                  discRotate();
+                    video = videos[4];
+                   
+                  }
+                  if (buttonselect == 1) {
+                    document.getElementById("jukeArrowL").innerHTML = '<img src="BarAssets/jukeArrow.png">';
+
+
+                  } else {
+                    document.getElementById("jukeArrowL").innerHTML = '<img src="BarAssets/jukeArrow.png"  onclick="prevCD(); playVid()" onmouseover="this.src=\'BarAssets/jukeArrow.gif\'" onmouseout="this.src=\'BarAssets/jukeArrow.png\'">';
+             
+                  }
+
+                  if (buttonselect == 5) {
+                    document.getElementById("jukeArrowR").innerHTML = '<img src="BarAssets/jukeArrow.png">';
+
+
+                  } else {
+                    document.getElementById("jukeArrowR").innerHTML = '<img src="BarAssets/jukeArrow.png"  onclick="nextCD(); playVid()" onmouseover="this.src=\'BarAssets/jukeArrow.gif\'" onmouseout="this.src=\'BarAssets/jukeArrow.png\'">';
+             
+                  }
+                  document.getElementById("vid").innerHTML = '<iframe width="200" height="20" id="jukeVid" src="' + video.vLink + '"' + 'title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+                  document.getElementById("jukeTitle").innerHTML = '<h1> Now Playing : ' + video.vTitle + '</h1>';
+                  clrB();
+                  
+                };
+
+                  function clrJ() {
+                    document.getElementById("jukeTitle").innerHTML = '<h1> Now Playing :'
+                clearInterval(rotateTimer);    
+                document.getElementById('disc1').style= 'reset()';
+                document.getElementById('disc2').style= 'reset()';
+                document.getElementById('disc3').style= 'reset()';
+                document.getElementById('disc4').style= 'reset()';
+                document.getElementById('disc5').style= 'reset()';
+          const element = document.getElementById('jukeVid');
+          element.remove();
+        }
+        
+
+        function discRotate() {
+         rotateDeg ++;
+         if (buttonselect == 1) {
+          document.getElementById('disc1').style.transform= 'rotate('+rotateDeg+'deg)';
+         }
+         if (buttonselect == 2) {
+          document.getElementById('disc2').style.transform= 'rotate('+rotateDeg+'deg)';
+         }
+          if (buttonselect == 3) {
+          document.getElementById('disc3').style.transform= 'rotate('+rotateDeg+'deg)';
+          }
+          if (buttonselect == 4) {
+          document.getElementById('disc4').style.transform= 'rotate('+rotateDeg+'deg)';
+          }
+          if (buttonselect == 5) {
+          document.getElementById('disc5').style.transform= 'rotate('+rotateDeg+'deg)';
+          }
+        }
+
+     
+
+
+                function nextCD() {
+                  
+                  if (buttonselect < 5) {
+                   
+                  buttonselect ++;
+                  }
+                }
+
+                function prevCD() {
+                  if (buttonselect > 1) {
+                  buttonselect --;
+                }
+              }
+              function jukeHoverNone() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : </h2>';
+
+              }
+
+              function jukeHover1() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : ' + videos[0].vTitle; + '</h2>';
+
+              }
+              function jukeHover2() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : ' + videos[1].vTitle; + '</h2>';
+
+              }
+              function jukeHover3() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : ' + videos[2].vTitle; + '</h2>';
+
+              }
+              function jukeHover4() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : ' + videos[3].vTitle; + '</h2>';
+
+              }
+              function jukeHover5() {
+                document.getElementById("jukeHover").innerHTML = '<h2> Hovering On : ' + videos[4].vTitle; + '</h2>';
+
+              }
+
+              </script>
+              
+         
+         
+         <div id="vid">  </div>
+<div class="JukeBox">
+  <div id="jukeTitle"><h1> Now Playing :</h1></div>  <div id="jukeHover"><h2> Hovering On :</h2></div>
+<button type="button" onclick="clrJ()"> Clear Jukebox </button>
+<br>
+<a href="#BarJuke">  <div id="jukeArrowL"> <img src="BarAssets/jukeArrow.png" onclick="prevCD(); playVid()" onmouseover="this.src='BarAssets/jukeArrow.gif'" onmouseout="this.src='BarAssets/jukeArrow.png'"> </div></a> <img id="disc1" src="BarAssets/disc1.png" width="100px" onclick="vid1(); playVid()" onmouseover="jukeHover1()" onmouseout="jukeHoverNone()"> <img  id="disc2" src="BarAssets/disc2.png" width="100px" onclick="vid2(); playVid()" onmouseover="jukeHover2()" onmouseout="jukeHoverNone()">  <img  id="disc3" src="BarAssets/disc3.png" width="100px" onclick="vid3(); playVid()" onmouseover="jukeHover3()" onmouseout="jukeHoverNone()"> <img  id="disc4" src="BarAssets/disc4.png" width="100px" onclick="vid4(); playVid()" onmouseover="jukeHover4()" onmouseout="jukeHoverNone()"> <img  id="disc5" src="BarAssets/disc5.png" width="100px" onclick="vid5(); playVid()" onmouseover="jukeHover5()" onmouseout="jukeHoverNone()"> <a href="#BarJuke"> <div id="jukeArrowR"> <img src="BarAssets/jukeArrow.png"  onclick="nextCD(); playVid()" onmouseover="this.src='BarAssets/jukeArrow.gif'" onmouseout="this.src='BarAssets/jukeArrow.png'"> </div></a>
+
+  
+</div>
+
+
+</div>
+
+   <div class="BarLeft">
+    <a href="#BarLeft"> <img id="barCake"  src="BarAssets/cake.png" title="Cake" onclick="cakeLie()"> </a>
+    <script>
+    
+      function cakeLie() {
+        document.getElementById("barAudio").innerHTML = '<audio id="audio" src="BarAssets/portalsound.mp3"></audio>';
+    var audio = document.getElementById("audio");
+    audio.play();
+
+
+        document.getElementById("Chat").innerHTML ='The bartender says: ' + ' Cake? We dont serve cake here. Whoever told you musta been lying!';
+       
+          
+          const element = document.getElementById('barCake');
+          element.remove();
+        }
+        
+           function spillDrink1() {
+        document.getElementById("barAudio").innerHTML = '<audio id="audio" src="BarAssets/spilldrink.mp3"></audio>';
+     
+    var audio = document.getElementById("audio");
+    audio.play();
+
+
+          
+          const element = document.getElementById('barSpill');
+          document.getElementById("barSpill").innerHTML ='<a href="#barSpill"> <img  src="BarAssets/spilldrink2.png" title="Speeled drink :(" onclick="spillDrink2()"> </a>';
+          document.getElementById("barSpill").style.right ='60px';
+          document.getElementById("barSpill").style.bottom ='90px';
+        }
+
+        function spillDrink2() {
+        document.getElementById("barAudio").innerHTML = '<audio id="audio" src="BarAssets/JCShame.mp3"></audio>';
+    var audio = document.getElementById("audio");
+    audio.play();
+
+
+        document.getElementById("Chat").innerHTML ='The bartender says: ' + 'What a shame';
+
+        }
+      
+
+    </script>
+    <img src="BarAssets/Barshelfs.png" usemap="#drinkSelect" height="470px">
+    <script>
+      var drinkSelect;
+
+      var drinks = [
+
+              {
+                 
+                dVLink: "https://www.youtube-nocookie.com/embed/JC2egrdAVYs?autoplay=1",
+              },
+          {
+                
+            dVLink:  "https://www.youtube-nocookie.com/embed/Gy19H-hVbIE?autoplay=1",
+              },
+          {
+                  
+            dVLink:  "https://www.youtube-nocookie.com/embed/OYBZrRCCrXE?autoplay=1",
+              },
+          {
+                 
+                  dVLink: "https://www.youtube-nocookie.com/embed/T28LyXf8MlU?autoplay=1",
+              },
+              {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/wOBNrAtIhRo",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/Lvp9rDSErHs?start=97",
+             }, 
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/R_FQU4KzN7A?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/jWYUiVfZo9k?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/Ek6HP4ypZlk?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/hxVPPy5w9NA?autoplay=1",
+             },
+            {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/eDcFdiersSM?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/EM4iQn2Si-U?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/kwlcMUAOkRQ?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/fhw9LmrtWyA?autoplay=1",
+             },
+             {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/fhw9LmrtWyA?autoplay=1",
+             },
+               {
+                 
+                 dVLink: "https://www.youtube-nocookie.com/embed/TvbtcCpWf-w?autoplay=1",
+             },
+            ];
+            
+            function randomDrink() {
+              drinkSelect = 0;
+            }
+
+            function drink1() {
+              drinkSelect = 1;
+            }
+
+            function drink2() {
+              drinkSelect = 2;
+            }
+            function drink3() {
+              drinkSelect = 3;
+            }
+            function drink4() {
+              drinkSelect = 4;
+            }
+            function drink5() {
+              drinkSelect = 5;
+            }
+            function drink6() {
+              drinkSelect = 6;
+            }
+            function drink7() {
+              drinkSelect = 7;
+            }
+            function drink8() {
+              drinkSelect = 8;
+            }
+            function drink9() {
+              drinkSelect = 9;
+            }
+            function drink10() {
+              drinkSelect = 10;
+            }
+            function drink11() {
+              drinkSelect = 11;
+            }
+             function drink12() {
+              drinkSelect = 12;
+            }
+            function drink13() {
+              drinkSelect = 13;
+            }
+            function drink14() {
+              drinkSelect = 13;
+            }
+             function drink15() {
+              drinkSelect = 14;
+            }
+            
+
+            
+      function selectDrink() {
+            
+        if (drinkSelect == 0) {
+          drink = drinks[Math.floor(Math.random()* drinks.length)];
+           
+        } else if (drinkSelect == 1){
+          drink = drinks[0];
+
+        } else if (drinkSelect == 2){
+          drink = drinks[1];
+            
+          } else if (drinkSelect == 3){
+            drink = drinks[2];
+
+          } else if (drinkSelect == 4){
+            drink = drinks[3];
+          } else if (drinkSelect == 5){
+            drink = drinks[4];
+
+          }else if (drinkSelect == 6){
+            drink = drinks[5];
+
+          }else if (drinkSelect == 7){
+            drink = drinks[6];
+
+          }else if (drinkSelect == 8){
+            drink = drinks[7];
+
+          }else if (drinkSelect == 9){
+            drink = drinks[8];
+
+          }else if (drinkSelect == 10){
+            drink = drinks[9];
+
+          }else if (drinkSelect == 11){
+            drink = drinks[10];
+
+          }else if (drinkSelect == 12){
+            drink = drinks[11];
+
+          }else if (drinkSelect == 13){
+
+
+            drink = drinks[Math.floor(Math.random()* (13 - 12 + 1) + 12)];
+
+          }else if (drinkSelect == 14){
+
+            drink = drinks[15];
+
+          }
+          
+          
+          
+          
+          
+
+        
+          document.getElementById("drink").innerHTML = '<iframe width="300" height="300" id="barVid" src="' + drink.dVLink + '"' + 'title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' ;
+          buttonselect = 0;
+          clrJ();
+        };
+        
+
+
+      </script>
+
+
+
+
+
+
+
+
+</div>
+                         
+                            <div class="BarRight">
+                                <h2> Nav</h2>
+                                <p> Back to homepage </p>
+                            <a href="home.html"> <img src="back.gif" width="80px"> </a>
+                                
+                                            </div>
+                                             
+                
+            <div class="BarScene">
+              <img src="B%26B/UCBanner.gif" width="300px">
+                    <div id="drink"> </div>
+                    <script> 
+                     function clrB() {
+          
+                      const element = document.getElementById('barVid');
+                      element.remove();
+                    }
+                    </script>
+                       <div id="barSpill"> <a href="#barSpill"> <img src="BarAssets/spilldrink1.png" title="Drink :)" onclick="spillDrink1()"> </a></div>
+                    <button type="button" onclick="clrB()"> Clear bar </button>
+            </div>
+
+            <div class="BarChat">
+
+
+                <script>
+
+                  function chat() 
+                    {
+                    var things = ['Melvin and Gina dont even drink, and yet all of their websites have a bar', "If you're looking for work, I hear the fighters guild is hiring", 'Sometimes... I dream about cheese.', 'Do you feel it? I feel it.', 'Tunnel Snakes rule!', 'Whaddya buyin?', 'Actual bartender coming soon..maybe', "You hear about that secret page? I can't figure out the code.. 5140? no that's not right :/", 'Phonecall for you, uh some guy is calling out from.. Scatmans World?', "Could you please refrain from tapping, oh so gently rapping, rapping on my gamer decor? it's limited edition!", "Oh before you go... there's just one more thing, I noticed you didn't pay your tab!", "This vampire came in the other day and had a full conversation with the TV! Just when you think you've seen it all!", 'No I dont slide the glass down the bar anymore, not after the incident with the cowboy >:[', 'So a witch, a half-vampire and a cyborg ninja walk into the bar.. No this is not a joke, they came in together and shared high-heel fighting techniques!', "I don't know what those marines want, HUHPH and UNF? what does that even mean?", "Your health is low! Do you want any potions or food?", "Weren't you supposed to be in the test chamber half an hour ago?", "If you don't want any alcohol, we have this uh.. what is this? [BIG SHOT] Soda.", "My strongest drinks will kill you traveller, You can't handle my strongest drinks!", "Hugh Jass? Is anyone here named Hugh Jass?! THERE'S A PHONE CALL FOR A HUGH JASS!", "HAPPINESS  FOR  EVERYBODY, FREE,  AND NO ONE WILL GO AWAY UNSATISFIED!" ];
+                    var thing = things[Math.floor(Math.random()*things.length)];
+                    
+                    document.getElementById("Chat").innerHTML ='The bartender says: ' + thing
+                    }
+                    </script>
+
+
+               
+
+<button type="button"  onclick="chat()"> Chat with bartender </button>
+<h3 id="Chat" >   </h3>
+                </div>
+<div id="barAudio"></div>
+</body>
+
+
+
+<!-- Mirrored from melvins-world.neocities.org/bar by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 18:01:31 GMT -->
+</html>

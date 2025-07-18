@@ -1,0 +1,311 @@
+#flashBase {
+    background-color: black;
+text-align: center;
+color: white;
+}
+
+
+.mainBoxContainer {
+  background-image: linear-gradient( #000000, #4d4d4d);
+  
+  position: relative;
+  border: ridge 4px #7c0a0f;
+text-align: center;
+display: inline-block;
+margin-top: 5px;
+
+
+
+height:270px;
+width:90%;
+
+}
+
+.mainBoxImg {
+
+
+  height: 88.5%;
+  position: absolute;
+left:1.5%;
+
+display: inline-block;
+
+}
+
+
+#Fhr1 {
+border: ridge 4px #BD1323;
+width: 70%;
+}
+
+#Fhr2 {
+border: ridge 3px #BD1323;
+width: 50%;
+}
+     
+
+
+     #selectionHeader {
+
+              background-image: linear-gradient( #ff0000, #B9B3FB);
+              width:20%;
+              height:58%;
+              margin-top:2%;
+              left:40%;
+            position: relative;
+              border: ridge 6px #7c0a0f;
+            
+             
+           border-radius: 50%;
+
+            }
+
+
+
+.mainBoxBody {
+  top:12%;
+  width: 70%;
+  
+  
+  position: absolute;
+  left:24%;
+  text-align: left;
+  display: inline-block;
+}
+
+
+.mainBoxBody p{
+  font-size: 20px;
+  
+  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+  
+  
+}
+
+
+.mainBoxButtons {
+top:72%;
+width: 70%;
+height: 25%;
+margin-top: 10px;
+position: absolute;
+left:24%;
+text-align: left;
+display: inline-block;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    
+   
+    height:50px;
+
+    border: ridge 5px #BD1323;
+background-color: black;
+background-image: radial-gradient(white, white);
+
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 0% 100%;
+transition: 0.6s;
+margin-right: 5px;
+border-radius: 25%;
+
+}
+
+.button h2{
+    font-size: 18px;
+text-align: center;
+padding-right:5px ;
+padding-left:5px ;
+}
+
+.button:hover {
+    
+    transition-duration: 0.6s;
+  
+    background-size: 100% 100%;
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    color:#000000;
+ 
+              }
+
+
+
+
+.windowBoxContainer{
+    background-image: linear-gradient( #000000, #4d4d4d);
+    transition-duration: 0.4s;
+   position: relative;
+   border: ridge 4px #7c0a0f;
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+.windowBoxContainer:hover{
+  box-shadow: 0px 0px 10px #FFFFFF;
+  scale: 97%;
+}
+    
+
+.windowBoxHead {
+    background-image: linear-gradient( #7c0a0f, #BD1323);
+    width: 100%;
+    height: 23px;
+    border-bottom: ridge 4px #7c0a0f;
+ 
+}
+.windowBoxHead p{
+    background-image: linear-gradient( #ff0000, #B9B3FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-size: large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+margin-top: 0%;
+filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));
+}
+
+
+
+
+.windowBoxBody p{
+ 
+  
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+    
+    
+}
+
+
+
+    .detailedBoxContainer {
+                background-image: linear-gradient( #000000, #4d4d4d);
+                width:77%;
+                height: 750px;
+                position: relative;
+                border: ridge 4px #7c0a0f;
+              text-align: center;
+              display: inline-block;
+              margin-top: 5px;
+              }
+
+              .detailedBoxImgs {
+
+                background-image: linear-gradient( #000000, #4d4d4d);
+                width:25.5%;
+                height:90%;
+                right:34.6%;
+                margin-top: 1.3%;
+                position: relative;
+                border: ridge 1px #7c0a0f;
+              text-align: left;
+              display: inline-block;
+              overflow-y: scroll;
+
+              }
+
+              .detailedBoxImgs img{
+                height:40%;
+                width:95%;
+                border: ridge 4px #7c0a0f;
+                border-radius: 10%;
+              }
+
+              .detailedBoxTitle {
+
+                background-image: linear-gradient( #000000, #4d4d4d);
+                width:67%;
+                height:9%;
+                top:5%;
+                left:30%;
+                position: absolute;
+                border: ridge 4px #7c0a0f;
+             
+              }
+
+              .detailedBoxTitle p{
+                text-align: center;
+                font-size: 55px;
+             bottom: 40%;
+             position: absolute;
+              }
+
+               .detailedBoxTitle marquee{
+                text-align: center;
+                font-size: 60px;
+             bottom: 49%;
+             margin-top: 4.50%;
+             height: 100%;
+             position: relative;
+             filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+              }
+
+
+              .detailedBoxBody {
+
+                background-image: linear-gradient( #000000, #4d4d4d);
+                width:67%;
+                height:60%;
+                top:19%;
+                left:30%;
+                position: absolute;
+                border: ridge 4px #7c0a0f;
+                overflow-y: auto;
+             
+
+              }
+
+              .detailedBoxRating {
+
+                background-image: linear-gradient( #000000, #4d4d4d);
+                width:67%;
+                height:11%;
+               top:83.5%;
+               left:30%;
+                position: absolute;
+                border: ridge 4px #7c0a0f;
+             
+              
+
+              }
+
+
+
+
+
+#smallBox {
+    height:225px;
+    width:300px;
+margin-top: 5px;
+}
+
+
+
+#smallBox img {
+    margin-top: 10px;
+    border: ridge 3px #7c0a0f;
+    height:80px;
+    width:80px;
+}
+
+
+
+
+
+       
+
+
+            
+            
+            #playlistBox {
+          
+    height:450px;
+    width:300px;
+margin-top: 5px;
+margin-right: 5px;
+
+}
+
+

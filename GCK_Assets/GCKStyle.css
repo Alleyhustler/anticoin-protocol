@@ -1,0 +1,414 @@
+body.Java{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+color: gainsboro;
+  }
+
+.Java hr {
+
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+border: ridge rgb(226, 226, 226) ;
+}
+
+  .Java td {
+     
+      
+      width:1300px;
+      
+      border: ridge rgb(226, 226, 226) ;
+      box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+    
+  }
+
+  .Java a {
+     
+      
+    color:rgb(226, 226, 226) ;
+    
+  
+}
+
+#slideContainer {
+
+      
+border: ridge rgb(226, 226, 226) ;
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+  }
+
+    /* The slider itself */
+    .jsSlider {
+      -webkit-appearance: none; 
+
+      width: 95%; 
+      height: 10px; 
+      background-color: black;
+      border: 5px ridge gray;
+
+    }
+   
+   
+
+    
+  
+    .jsSlider::-webkit-slider-thumb {
+      -webkit-appearance: none; 
+
+      width: 25px; 
+      height: 25px;
+      background: gray; 
+      border-radius: 50%; 
+      cursor: pointer; 
+     
+    }
+   
+  
+    .jsSlider::-moz-range-thumb {
+      width: 25px;
+      height: 25px; 
+      background: gray; 
+   
+      cursor: pointer;
+      border-radius: 50%; 
+    }
+
+    .jsSlider::-moz-range-progress {
+      background-color: gainsboro;
+      height: 10px;
+    }
+    
+          #animationContainer1 {
+      
+    height: 200px;
+    width: 300px;
+   
+    margin-left: 24%;
+     }
+
+#animationBox1 {
+position: absolute;
+height: 200px;
+width: 300px;
+background-color: gainsboro;
+
+}
+
+#animationObject1 {
+position: absolute;
+height: 50px;
+width: 50px;
+background-color: black;
+border-radius: 50%; 
+margin-top: 25%;
+left: 10%;
+ }
+
+
+ #animationContainer2 {
+      
+  height: 200px;
+  width: 300px;
+ 
+  margin-left: 20%;
+   }
+
+#animationBox2 {
+position: absolute;
+height: 200px;
+width: 300px;
+background-color: gainsboro;
+
+}
+
+#animationObject2 {
+position: absolute;
+transform-origin: center;
+height: 50px;
+width: 50px;
+background-color: black;
+
+
+margin-top:25%;
+left: 42%;
+
+}
+
+#animationContainer3 {
+      
+height: 200px;
+width: 300px;
+background-color: gainsboro;
+margin-left: 24%;
+ }
+
+#animationBox3 {
+position: absolute;
+height: 200px;
+width: 300px;
+background-color: gainsboro;
+
+}
+
+#animationObject3 {
+position: absolute;
+height: 50px;
+width: 50px;
+background-color: gainsboro;
+border-radius: 50%; 
+margin-top: 5%;
+left: 10%;
+
+}
+
+#chatContainer {
+  left:12%;
+  height:400px;
+  width:1050px;
+  border:gainsboro 10px ridge;
+  box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+  border-radius: 100px 100px 100px 100px;
+  background: url(../ChatAssets/chatbg3.png);
+  background-size: contain;
+  position: relative;
+         }
+
+#chatChar {
+top:17%;
+left:3%;
+height:180px;
+width:170px;
+border:gainsboro 10px ridge;
+background-color: black; 
+position: relative;
+z-index: 1;
+          
+                 }
+
+                 #chatCharPortrait {
+               
+                 position: relative;
+                 z-index: 1;
+                               
+                                      }
+                 #chatStatic {
+                  opacity: 0.3;
+                  position: absolute;
+                  z-index: 10;
+                 height:180px;
+                 width:170px;
+
+                 }
+
+#chatDialo {
+color: gainsboro;
+font-size: 30px;
+bottom:35%;
+left:23%;
+height:200px;
+width:500px;
+border: gainsboro 9px inset;
+border-radius: 100px 100px 100px 100px;
+position: relative;
+background-color: black;   
+                 }
+
+                 #chatDialoInner {
+                  font-size: 30px;
+                  bottom:-35%;
+                  left:-1%;
+                  height:200px;
+                  width:500px;
+                 
+                  position: relative;
+                 
+                                       }
+
+
+#chatChoices {
+bottom:30%;
+left:4%;
+height:40px;
+width:700px;
+border:gainsboro 10px ridge;
+border-radius: 100px 100px 100px 100px;
+position: relative;
+background-color: black;                                         
+                                       }
+
+#chatCallList{
+bottom:116%;
+left:80%;
+height:350px;
+width:120px;
+border:gainsboro 10px ridge;
+border-radius: 60px;
+position: relative;
+background-color: black;                                         
+                                       }
+                                       
+                                       
+                                       
+#clickOnTimeContainer{
+border: gainsboro 3px ridge;
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+height:15px;
+width:400px;
+background-color: black;   
+left:35%;
+position:absolute;
+}
+
+#clickOnTimeLine{
+height:15px;
+width:10px;
+left:0pt;
+background-color: white;   
+position:absolute;
+
+}
+
+
+#clickOnTimeWinArea{
+height:15px;
+background-color: rgb(117, 117, 117);   
+position:absolute;
+}
+
+#holdOnTimeContainer{
+border: gainsboro 3px ridge;
+box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+height:300px;
+width:15px;
+background-color: black;   
+left:49.3%;
+position:relative;
+}
+
+#holdOnTimeLine{
+height:20px;
+width:15px;
+bottom:0px;
+background-color: white;   
+position:absolute;
+
+}
+
+
+#holdOnInterface{
+
+
+
+top:10px;
+
+position:relative;
+
+
+}
+
+
+
+
+
+#interactiveAdContainer{
+    position:absolute;
+    left: 33.5%;
+    border: gainsboro 2px ridge;
+background-color: gray;
+    width: 468px;
+    height: 60px;
+}
+
+
+#TV {
+
+  height: 315px;
+  width: 560px;
+  border: gainsboro 15px outset;
+  
+}
+
+.guide {
+  color: gainsboro;
+  background-image: url(../DiverAssets/inside2.png);
+  border: gainsboro outset 10px;
+
+}
+
+#coinContainer{
+  left:12%;
+  height:400px;
+  width:1050px;
+  border:gainsboro 10px ridge;
+  box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+  border-radius: 100px 100px 100px 100px;
+  background: url(../ChatAssets/chatbg3.png);
+  background-size: contain;
+  position: relative;
+
+
+}
+
+
+
+
+#coinMain {
+  color: gainsboro;
+  font-size: 30px;
+bottom: 10%;
+  left:34.2%;
+  height:320px;
+  width:600px;
+  border: rgb(160, 160, 160) 4px inset;
+  border-radius: 100px 100px 100px 100px;
+  position: absolute;
+  background-color: black;   
+  display: inline-block;
+
+
+}
+
+#coinLegend {
+  height:350px;
+  width:120px;
+  right:83%;
+  bottom:5%;
+position:absolute;
+border: rgb(160, 160, 160) 7px inset;
+background-color: black;
+}
+
+
+#coinLog {
+  height:350px;
+  width:120px;
+  left:18%;
+ bottom:5%;
+position:absolute;
+border: rgb(160, 160, 160) 7px inset;
+background-color: black;
+
+
+}
+
+
+
+.coinLand img{
+  transition-duration: 0.6s;
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+  
+
+}
+
+
+.RTDCol{
+  position: relative;
+  display: inline-block;
+width: 100px;
+}
+
+
+

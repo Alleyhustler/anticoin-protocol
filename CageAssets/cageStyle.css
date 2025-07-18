@@ -1,0 +1,205 @@
+.cagePage {
+         padding: 0;
+         background-color: black;
+        }
+
+        .cageHeader {
+       color:white;
+         text-align: center;
+         background-image: url(https://melvins-world.neocities.org/Tiles/spacetile.png);
+         box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+         border: ridge rgb(145, 145, 145) ;
+     
+        }
+
+        #goneIn60 {
+          text-align: center;
+          background-image: url(https://melvins-world.neocities.org/CageAssets/60seconds.png);
+          background-size: contain;
+          
+          box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+          border: ridge rgb(141, 49, 49) ;
+          height: 440px;
+        }
+        
+         #nicCageNext {
+          text-align: center;
+          background-color: black;
+          background-image: url(https://melvins-world.neocities.org/CageAssets/nextbg.jpg);
+          
+          color:white;
+          box-shadow: 0px 0px 6px 6px cadetblue;
+          border: ridge black ;
+          height: 550px;
+        }
+
+       
+
+        #vidContainer {
+          position:fixed;
+          top: 94%;
+          right: 0;
+          width: 1400px;
+          height: 40px;
+          
+        }
+
+ #faceOff {
+  box-shadow: 0px 0px 6px 6px rgb(57, 75, 126);
+  border: ridge rgb(88, 117, 247) ;
+ background-image: url(https://melvins-world.neocities.org/CageAssets/facebg.png);
+
+height: 600px;
+text-align: center;
+
+ }
+
+        #faceOffDrag {
+          position:relative;
+  
+    
+         margin-left: 1%;
+         margin-right: 90%;
+        }
+
+
+        #faceOffBox {
+          position:absolute;
+          
+         margin-left: 66%;
+         margin-right: 1%;
+          height: 422px;
+          width: 335px;
+          border: 10px ridge rgb(88, 117, 247);
+        }
+
+        #cageFace {
+          position:absolute;
+  
+        }
+
+        #johnFace {
+          position:absolute;
+         
+        }
+        
+            #faceVid {
+          position:fixed;
+          top: 94%;
+          right: 0;
+          width: 1400px;
+          height: 40px;
+        
+        }
+
+
+
+        #dragBunneh {
+          position:absolute;
+        
+        }
+
+
+        #conAirContainer {
+          background-image: url(https://melvins-world.neocities.org/CageAssets/conairposter.png);
+          box-shadow: 0px 0px 6px 6px rgb(228, 140, 105);
+          border: ridge rgb(255, 126, 75) ;
+        
+        height: 600px;
+        text-align: center;
+
+         }
+
+         #conAirDrag {
+          position:relative;
+          margin-left: 2%;
+          margin-right: 30%;
+         
+        }
+
+        #conAirVid {
+          position:fixed;
+          top: 94%;
+          right: 0;
+          width: 1400px;
+          height: 40px;
+        
+        }
+ 
+ 
+         #conAir {
+          position:relative;
+          margin-top: 100px;
+         
+        }
+
+        #conAir2 {
+       
+          margin-top: 100px;
+        text-align: center;
+         }
+
+     
+         #conAir3{
+       
+          margin-top: 70px;
+        text-align: center;
+         }
+
+         #conAir4{
+      
+          margin-top: 10px;
+        text-align: center;
+         }
+
+        #bawxBase {
+          position:relative;
+        
+          margin-top: 70px;
+        }
+
+
+       
+
+
+       
+        #cagePictures {
+          
+          text-align: center;
+          background-image: url(https://melvins-world.neocities.org/Tiles/cageTile.png);
+          box-shadow: 0px 0px 6px 6px rgb(92, 92, 92);
+          border: ridge rgb(141, 49, 49) ;
+          height: 520px;
+          margin-top: 70px;
+        }
+
+
+        #cagePictures p {
+         
+         text-align: left;
+        }#cagePictures img {
+          background-color: rgba(0, 0, 0, 0.88);
+          box-shadow: 0px 0px 6px 6px rgb(0, 0, 0);
+         }
+
+         #redacted {
+       
+           display: inline;
+          background-color: rgba(0, 0, 0);
+          color:white
+         }
+
+         #cageIncidentBox {
+          text-align: center;
+                margin-left:15%;
+                 Margin-right:15%;
+                 height: 200px;
+                 text-align:center;
+                   
+             
+                 color: aliceblue;
+                 background-color: rgba(10,10,10, 0.95); 
+         
+                 
+               
+                 }

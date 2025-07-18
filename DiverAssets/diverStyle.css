@@ -1,0 +1,100 @@
+  
+
+
+#gamebreakdown {
+  text-align: center;
+  
+  margin-left:30%;
+  
+
+}
+
+.WebDivers {
+        text-align: center;
+        padding: 0;
+        background-image: url(https://melvins-world.neocities.org/DiverAssets/inside.png);
+        color: white;
+       }
+
+       .WebDiversHeader {
+        border: black solid 10px;
+        text-align: center;
+        padding: 0;
+        background-image: url(https://melvins-world.neocities.org/DiverAssets/inside2.png);
+        z-index: 3;
+       }
+
+     
+       
+       .button {
+    position: relative;
+    display: inline-block;
+    
+   
+    height:50px;
+
+    border: ridge 5px silver;
+
+background-image: url(https://melvins-world.neocities.org/DiverAssets/inside.png);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 0% 100%;
+transition: 0.6s;
+margin-right: 5px;
+border-radius: 20%;
+
+}
+
+.button h2{
+    font-size: 18px;
+text-align: center;
+padding-right:5px ;
+padding-left:5px ;
+}
+
+.button:hover {
+    
+    transition-duration: 0.6s;
+    scale: 95%;
+    background-size: 100% 100%;
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    color:whitesmoke;
+ 
+              }
+              
+              
+                #diveContainer {
+        background-image: url(https://melvins-world.neocities.org/DiverAssets/inside2.png);
+        border: rgb(141, 141, 141) ridge 10px;
+        margin-left:15%;
+        width:70%;
+
+       }
+       
+
+       #diveContainer table{
+       
+        margin-left:15%;
+
+
+       }
+
+       #diveContainer iframe{
+        border: rgb(141, 141, 141) ridge 3px;
+        
+
+
+       }
+
+       .diveImgContainer td{
+        text-shadow: 0px 0px 30px white;
+        padding: 50px;
+     
+       }
+   
+       .diveImgContainer img{
+         text-align: left;
+         border: rgb(87, 87, 87) ridge 10px;
+         width:200px;
+         height:80px;
+       }

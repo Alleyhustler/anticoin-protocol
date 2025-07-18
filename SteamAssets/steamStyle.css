@@ -1,0 +1,303 @@
+.Steam{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(76, 88, 68);
+    color:rgb(73, 78, 73);
+  }
+  
+   #steamTop {
+    background-color: rgb(17, 17, 17);
+    color:rgb(73, 78, 73);
+
+   }
+
+   #steamMid {
+ 
+
+
+    background-color: rgb(35, 35, 35);
+    color:rgb(73, 78, 73);
+    padding:0px;
+    margin-top: -1.3%;
+    margin-left:10%;
+    Margin-right:10%;
+    height:5000px;
+    width: 81%;
+   }
+   
+  
+#steamContainer {
+  
+  margin: auto;
+  width: 1280px;
+  height:750px;
+  background-color: rgb(54, 54, 56);
+  border: 2px ridge rgb(39, 38, 36);
+}
+
+
+#steamCHead {
+  background-image: url(https://melvins-world.neocities.org/Tiles/steamheadertile.jpg);
+  background-repeat: inherit;
+  margin: auto;
+  width: 1280px;
+  height:130px;
+
+}
+
+#sHeadT1{
+position: absolute;
+
+margin-top: 7px;
+margin-left: 25px;
+
+}
+
+#sHeadT1 p{
+ 
+  display: inline;
+  padding-right: 17px;
+  margin-right: 17px;
+    color: rgb(160, 168, 155);
+  
+  }
+  #sHeadT2{
+    position: absolute;
+    
+    margin-top: 40px;
+    margin-left: 25px;
+    
+    }
+
+  #sHeadT2 h1{
+ 
+    display: inline;
+    font-weight: lighter;
+    padding-right: 17px;
+    margin-right: 17px;
+      color: rgb(160, 168, 155);
+    
+    }
+
+    #sHeadT3{
+      position: absolute;
+      
+      margin-top: 80px;
+      margin-left: 339px;
+      
+      }
+      #sHeadT3 h3{
+ 
+        display: inline;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-right: 15px;
+          color: rgb(160, 168, 155);
+        
+        }
+
+        #sHeadUser{
+          position: absolute;
+          
+          margin-top: 17px;
+          margin-left: 317px;
+          
+          }
+          #sHeadUser p{
+            display: inline;
+            
+            margin-left: 750px;
+              color: rgb(160, 168, 155);
+            
+            }
+
+
+#steamCViewScreen {
+  background-color: rgb(35, 34, 30);
+  
+  margin: auto;
+  width: 1230px;
+  height:530px;
+  border: 2px ridge rgb(79, 75, 72);
+  border-radius: 10px;
+  
+  
+ 
+}
+
+
+
+#steamCViewScreenContent {
+
+  width: 1223px;
+  height:530px;
+  
+  border-radius: 15px;
+  background-image: url(https://melvins-world.neocities.org/SteamAssets/gmodtest.png);
+ background-size:contain;
+ 
+}
+
+.steamLibraryList1 {
+  position: absolute;
+  margin-left:5px;
+
+  width: 270px;
+  height:530px;
+  text-align: left;
+
+  overflow-y: scroll;
+ 
+
+}
+
+.steamLibraryList1 p {
+  padding-top: 3px;
+padding-left: 5px;
+margin: auto;
+display: block;
+    color: rgb(193, 192, 187);
+ 
+}
+
+.steamLibraryList1 p:hover {
+  cursor: pointer;
+text-shadow: 0px 0px 1px whitesmoke;
+ 
+}
+
+
+#LibrarySelection {
+  position: absolute;
+  
+    width: 950px;
+    height:526px;
+    
+    text-align: left;
+   margin-left: 274px;
+  
+    overflow-y: scroll;
+   
+    color: rgb(193, 192, 187);
+  }
+
+#LibrarySelectionTitle {
+  background-color: rgba(35, 34, 30, .80);
+  width:800px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+ 
+  }
+
+  #LibrarySelectionTitle p{
+    display: inline-block;
+    font-weight: bold;
+     font-size:35px;
+     margin-top:5px;
+     margin-left: 20px;
+    }
+
+  #LibrarySelectionSubtitle{
+    font-weight:normal;
+    display: inline-block;
+    width:250px;
+    height: 58px;
+    margin-left: 10px;
+    background-color: rgba(35, 34, 30, .60);
+    margin-bottom: 60px;
+    }
+
+    #LibrarySelectionSubtitle p{
+      margin-left: 78px;
+      margin-top: 2px;
+      font-size: 22px;
+      font-weight:normal;
+     
+      
+      
+      }
+  
+      #LibrarySelectionTextbox {
+       
+        background-color: rgba(35, 34, 30, .95);
+          width: 820px;
+          height: auto;
+          
+        
+         margin-left: 20px;
+        
+          
+         
+          color: rgb(193, 192, 187);
+
+      }
+
+      #LibrarySelectionTextbox img{
+       margin: auto;
+       display: block;
+
+      }
+
+      #LibrarySelectionTextbox iframe{
+        margin: auto;
+        display: block;
+ 
+       }
+
+      #LibrarySelectionTextbox h2{
+      color: rgb(87, 139, 179);
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+
+      #LibrarySelectionTextbox p{
+          padding-left: 10px;
+        }
+        
+        
+        #steamCStatusImage{
+position: absolute;
+
+margin-bottom: 30px;
+margin-left: 1183px;
+padding: 10px;
+
+}
+
+   #steamCStatusImage img{
+border: ridge 7px rgb(142, 155, 172);
+border-radius: 10px;
+
+
+}
+
+#steamCStatusText {
+   position: absolute;
+  
+    margin-left:1070px;
+   margin-bottom:30px;
+   
+ 
+white-space: nowrap;
+ }
+
+ #steamCStatusText h4 {
+   position: absolute;
+   padding:0px;
+   margin-top:10px;
+   margin-left: 5px;
+font-weight: lighter;
+color: rgb(193, 192, 187);
+ 
+ }
+ 
+  #steamCStatusText p {
+    position: absolute;
+ padding:0px;
+ margin-top:30px;
+ margin-left: 60px;
+ font-weight: lighter;
+ color:gray;
+  }
